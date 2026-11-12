@@ -1,0 +1,7 @@
+﻿therapeutic_area,china_products_k,global_fpp_n,share_pct,ci95_lo_clopper_pearson,ci95_hi_clopper_pearson,ci95_lo_wilson,ci95_hi_wilson,method_note
+Malaria,24,98,24.49,16.36,34.21,17.04,33.86,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"
+HIV/AIDS,16,255,6.27,3.63,9.99,3.9,9.95,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"
+Tuberculosis,1,126,0.79,0.02,4.34,0.14,4.36,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"
+Covid-19,4,19,21.05,6.05,45.57,8.51,43.33,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"
+Reproductive health,4,62,6.45,1.79,15.7,2.54,15.45,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"
+Hepatitis B and C,3,18,16.67,3.58,41.42,5.84,39.22,"有限清单构成比的描述性区间：Clopper-Pearson 为主、Wilson 为对照；数学含义为二项参考模型 k~Bin(n,p) 下 k/n 的精确覆盖区间宽度，刻画有限清单构成比的区间宽度，不解释为超总体随机抽样的抽样误差"

@@ -1,0 +1,8 @@
+# Credential and local-only artefacts are excluded by the upload whitelist.
+*credential*
+*token*
+*secret*
+*.key
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

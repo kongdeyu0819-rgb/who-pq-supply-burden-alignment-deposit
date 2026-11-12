@@ -1,0 +1,17 @@
+﻿applicant,product_rows,confidence,dedup_note
+Guilin Pharmaceutical Co Ltd,17,high,"与 Guilin Pharmaceutical Co Ltd/Co., Ltd. 为同一家(桂林制药/复星)，17+7合并为24行"
+"Shanghai Desano Bio-Pharmaceutical Co., Ltd.",7,high,上海德莎诺 CDMO：上海主体(7)+印度实体(3)同属一家，合并10行
+"Guilin Pharmaceutical Co., Ltd.",7,high,"与 Guilin Pharmaceutical Co Ltd/Co., Ltd. 为同一家(桂林制药/复星)，17+7合并为24行"
+Desano Pharmaceuticals Private Limited,3,medium,上海德莎诺 CDMO：上海主体(7)+印度实体(3)同属一家，合并10行
+China Resources Zizhu Pharmaceutical Co Ltd,3,high,
+Zhejiang Huahai Pharmaceutical Co. Ltd.,2,high,
+"Shouguang Fukang Pharmaceutical Co., Ltd.",2,high,
+"Reyoung Pharmaceutical Co., Ltd.",2,high,
+"BrightGene Bio-Medical Technology Co., Ltd",2,high,
+Hainan Poly Pharma Co Ltd,1,high,
+Sinopharm Zhijun (Shenzhen) Pharm Co. Ltd,1,high,
+Anhui Biochem Bio-Pharmaceutical Co Ltd,1,high,
+"Shijiazhuang Lonzeal Pharmaceuticals Co., Ltd.",1,high,
+Beijing Holley-Cotec Pharmaceuticals Co Ltd,1,high,
+Shanghai Dahua Pharmaceutical Co Ltd,1,high,
+"Qilu Pharmaceutical Co.,Ltd",1,high,

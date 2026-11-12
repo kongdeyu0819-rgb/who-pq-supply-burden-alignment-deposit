@@ -1,0 +1,564 @@
+{
+  "schema": "B1-TMIH-deposit-manifest-v1",
+  "built_at_utc": "2026-11-12T06:56:13+00:00",
+  "listing_snapshot": "15 September 2026",
+  "observation_window": "2002-2026 (25 years, inclusive)",
+  "repository_purpose": "Public data and code deposit supporting the B1 TMIH manuscript",
+  "firewall": "Only public aggregate institutional data and derived results; companion-paper, trade-flow and single-procurement assets excluded; no credentials",
+  "files": [
+    {
+      "path": "data/raw/who_pq_fpp_2026-09-15.csv",
+      "bytes": 130007,
+      "sha256": "98998658f3afd926e85ef106e24f58d89b185ca133444c4ce637127251028dbd",
+      "rows": 650,
+      "local_source": "数据/raw/who_pq_fpp_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_api_2026-09-15.csv",
+      "bytes": 23118,
+      "sha256": "c932bdc8375bf3307e662bd8d37cf23b149801d9415a41c6b29e0aa5be1fb135",
+      "rows": 198,
+      "local_source": "数据/raw/who_pq_api_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_vaccines_2026-09-15.csv",
+      "bytes": 48152,
+      "sha256": "4caa702aef0ce435c6d43cb28302c39cd34de5b152e3def732522e66a995175f",
+      "rows": 286,
+      "local_source": "数据/raw/who_pq_vaccines_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_ivd_2026-09-15.csv",
+      "bytes": 80865,
+      "sha256": "7f3dc5b8a13e53c0ad39119fa4ead063436f041719c34e2b4763676665a0d6f8",
+      "rows": 436,
+      "local_source": "数据/raw/who_pq_ivd_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_mal_inc.csv",
+      "bytes": 19908,
+      "sha256": "c6d30180cd90f766d67197608b3dd14e76f9fcb8d7ebe7e68964384528fb37b7",
+      "rows": 953,
+      "local_source": "数据/raw/gho_mal_inc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_hiv_pl.csv",
+      "bytes": 16968,
+      "sha256": "bfa9c8000468e3c709d9bc4fe410394e33b57c2d938e68bea8a899497c081bee",
+      "rows": 958,
+      "local_source": "数据/raw/gho_hiv_pl.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_tb_inc.csv",
+      "bytes": 14562,
+      "sha256": "363cf7efec4939e2887040423b3f163d398dc0a6f5aa9917533366a6609dc151",
+      "rows": 958,
+      "local_source": "数据/raw/gho_tb_inc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_uhc.csv",
+      "bytes": 13847,
+      "sha256": "d61eef7c1a368618e5453de0d7a3e7fb359a3d27a7ae5e057abc21c73ef6080f",
+      "rows": 923,
+      "local_source": "数据/raw/gho_uhc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_pop.csv",
+      "bytes": 127509,
+      "sha256": "f2949b5a5a2534acd1e4822819577e76e79f40daf0dfce44ad5a858a67697d3d",
+      "rows": 6241,
+      "local_source": "数据/raw/wb_pop.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_gdp_pc.csv",
+      "bytes": 163241,
+      "sha256": "83f7a89b5c0971e55f4a13f731ed7b4793fd2cd8c09e4af6d1f4db0b19b4a0de",
+      "rows": 6075,
+      "local_source": "数据/raw/wb_gdp_pc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_che_pc.csv",
+      "bytes": 131103,
+      "sha256": "01401bceae815c369c92bac7e4e7dc9bf51fc235f8d62e490a3977249e76de9b",
+      "rows": 5570,
+      "local_source": "数据/raw/wb_che_pc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/processed/res_B_anchor_year_counts.csv",
+      "bytes": 542,
+      "sha256": "8e6a411792acdea233136150401479725520edbc61f13b4dcf8993827afd4fbc",
+      "rows": 26,
+      "local_source": "数据/processed/res_B_anchor_year_counts.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_anchor_apc.csv",
+      "bytes": 166,
+      "sha256": "7bdf36403f6e577c7bb246dd13adf5ea57161e7128e34f01c9487cf240a6eed5",
+      "rows": 5,
+      "local_source": "数据/processed/res_B_anchor_apc.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_anchor_applicant_country_reviewed.csv",
+      "bytes": 8119,
+      "sha256": "ace1fba3bc8c60e9ed2e9cc01f5ada7ba397133abef4d0e1609af1e6cc62d720",
+      "rows": 138,
+      "local_source": "数据/processed/res_B_anchor_applicant_country_reviewed.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_anchor_concentration_reviewed.csv",
+      "bytes": 505,
+      "sha256": "632273efb91937c93c6d665491cfa4b949d67682d0fb6ee1707b012ded166c2e",
+      "rows": 30,
+      "local_source": "数据/processed/res_B_anchor_concentration_reviewed.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_anchor_china_summary_reviewed.csv",
+      "bytes": 1179,
+      "sha256": "536366299670731e251d92ba2b09b93b2a6d345001d00d12cfc2128cab9b6805",
+      "rows": 17,
+      "local_source": "数据/processed/res_B_anchor_china_summary_reviewed.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_apc_ci_2026-11-11.csv",
+      "bytes": 1519,
+      "sha256": "fce53197c731fc21585893c226a9c19df46633b45f5d6296004586a0796dcc93",
+      "rows": 5,
+      "local_source": "数据/processed/res_B_uncertainty_apc_ci_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_concentration_ci_2026-11-11.csv",
+      "bytes": 1374,
+      "sha256": "0594f586f9d3b45eafebc024c0a6e5d1cfb281e137f82ef3c4d350f7fa71bef1",
+      "rows": 8,
+      "local_source": "数据/processed/res_B_uncertainty_concentration_ci_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_country_share_ci_2026-11-11.csv",
+      "bytes": 920,
+      "sha256": "8984a7acf390fc11ebc9b4c0cbf1003e6e40cb3d5f5fb9e2de966ff329b4b124",
+      "rows": 30,
+      "local_source": "数据/processed/res_B_uncertainty_country_share_ci_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
+      "bytes": 2019,
+      "sha256": "0f3e844a26307963a98cd4ca87e1542adebfa9e1219f7536c8da837fc9b6baa3",
+      "rows": 7,
+      "local_source": "数据/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
+      "bytes": 1569,
+      "sha256": "815a4df0c721c68967fc664ca0954b8805511036d92967ca7af6bdc3e6c99102",
+      "rows": 39,
+      "local_source": "数据/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_misalignment_ci_revised_2026-11-11.csv",
+      "bytes": 5211,
+      "sha256": "11528c47bb05b6d8873ecfb732d6e9977beb4277196eb4babb82007d0a3d990b",
+      "rows": 13,
+      "local_source": "数据/processed/res_B_uncertainty_misalignment_ci_revised_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
+      "bytes": 24992,
+      "sha256": "5b1710b964b3820254bbcc5ae9e0e46af82b17507804dde779f842b4c2f7963b",
+      "rows": 445,
+      "local_source": "数据/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_summary_2026-11-11.json",
+      "bytes": 9928,
+      "sha256": "ce88109e84ba4775ad059cf26157804850b96093d75eaef295e67b6433a1251e",
+      "rows": 319,
+      "local_source": "数据/processed/res_B_uncertainty_summary_2026-11-11.json",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_china_pq_breadth_input.csv",
+      "bytes": 5867,
+      "sha256": "66e9211529b3b16e8cb6b6260f9da4540c5ade3c9c702213d3af5fbb6aca3b78",
+      "rows": 53,
+      "local_source": "data/processed (PQ-side China projection, companion-namespace name withheld)",
+      "scan_layer": "data",
+      "note": "Byte-identical copy under a neutral name; PQ-side projection only (applicant, inn, therapeutic_area, pq_year), no trade/destination fields"
+    },
+    {
+      "path": "figures/Figure1.png",
+      "bytes": 238237,
+      "sha256": "cda98f62d01d2cd3ede609b3ae9ab31a1a0ddd2379850eec9a3d22042bf87ada",
+      "rows": null,
+      "local_source": "配图_2026-11-12/Figure1.png",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "figures/Figure2.png",
+      "bytes": 210898,
+      "sha256": "9fd0228c525ba327e33bd6a18b8a5ddae775c8b7bf000c62da283b06b98dabd2",
+      "rows": null,
+      "local_source": "配图_2026-11-12/Figure2.png",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "figures/Figure3.png",
+      "bytes": 190621,
+      "sha256": "3556284857fe439ef1011683fc458171e59f0f8a30707ad71e64960b09b26df6",
+      "rows": null,
+      "local_source": "配图_2026-11-12/Figure3.png",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "figures/figure_captions.md",
+      "bytes": 2260,
+      "sha256": "6dd1a1bd3d492fc174fdbe8f90029ca91339095e5d7f4337412612764b4f296b",
+      "rows": 7,
+      "local_source": "配图_2026-11-12/figure_captions.md",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "figures/figure_contract.json",
+      "bytes": 852,
+      "sha256": "9a2380af4be2cb8a601955537b8f48084c4beee0c2eee0d72f71941a1d0fdbb8",
+      "rows": 46,
+      "local_source": "配图_2026-11-12/figure_contract.json",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "figures/manifest.json",
+      "bytes": 9243,
+      "sha256": "848f9c291d568d0a730056aba2b4f17720b73b781334a269b96de3fd4e058503",
+      "rows": 426,
+      "local_source": "配图_2026-11-12/manifest.json",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
+      "path": "scripts/compute_B_uncertainty_2026-11-11.py",
+      "bytes": 40602,
+      "sha256": "b4c1ff6731573abd314e26f847b95d798efcdde71649496c10960c053f21fe6d",
+      "rows": 805,
+      "local_source": "数据/scripts/compute_B_uncertainty_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_uncertainty_calibre_2026-11-11.py",
+      "bytes": 5220,
+      "sha256": "83cd7fa272474aa33836a3ea29583d123a3b678626b56056693a119b28f2a7f2",
+      "rows": 114,
+      "local_source": "数据/scripts/verify_B_uncertainty_calibre_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_disease_specific_supply_2026-11-11.py",
+      "bytes": 8746,
+      "sha256": "9d04668d1d73f1f0799aea957867b9ccabd22f45e3778d81cba570e49b790162",
+      "rows": 216,
+      "local_source": "数据/scripts/verify_B_disease_specific_supply_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/apply_B_hhi_backfill_2026-11-11.py",
+      "bytes": 5964,
+      "sha256": "b7daa9fb7e3d42108ecdf15c120f1a6e229fe21fda798df93f37b6840fd05423",
+      "rows": 145,
+      "local_source": "数据/scripts/apply_B_hhi_backfill_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/finalize_B_v1_archive_2026-11-11.py",
+      "bytes": 7095,
+      "sha256": "2d3da66ed630d6817b9e5f5bd66ab9cd23b398ed7afb5f54ac0df589523f79b7",
+      "rows": 145,
+      "local_source": "数据/scripts/finalize_B_v1_archive_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/draw_B_figures_2026-11-12.py",
+      "bytes": 17792,
+      "sha256": "28d05ae95a09108ce690f54cf6514f689cb2d9d268f6a442a3224a55cb9bd0f1",
+      "rows": 356,
+      "local_source": "数据/scripts/draw_B_figures_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_figures_2026-11-12.py",
+      "bytes": 14284,
+      "sha256": "955d2faaf268be3603c7b57fdb304b66fe83c41f45eec609f85972b4890ccca1",
+      "rows": 294,
+      "local_source": "数据/scripts/verify_B_figures_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/audit_B_figure_colour_2026-11-12.py",
+      "bytes": 7927,
+      "sha256": "8a37ca9b79ed38ce42aede079b97fdb195204b0b646babcdaca06022013e4c17",
+      "rows": 173,
+      "local_source": "数据/scripts/audit_B_figure_colour_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_figure_count_and_citations_2026-11-12.py",
+      "bytes": 7032,
+      "sha256": "060c15d436ba9d4cc827a96db247de8b6cb2a9f36b2238e74e831287e38845c7",
+      "rows": 148,
+      "local_source": "数据/scripts/verify_B_figure_count_and_citations_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/assemble_B_manuscript_2026-11-12.py",
+      "bytes": 30077,
+      "sha256": "f195b44d18f0310c4f70c9230f254f2ce00e1e4cf8055850c1cb0ee539e104e1",
+      "rows": 482,
+      "local_source": "数据/scripts/assemble_B_manuscript_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_manuscript_v0_8_2026-11-12.py",
+      "bytes": 15071,
+      "sha256": "ec26702f8ca84d959d7c306ed820ba82b685d364cf99a44d7cbacf1c00b2fba1",
+      "rows": 285,
+      "local_source": "数据/scripts/verify_B_manuscript_v0_8_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/polish_B_manuscript_2026-11-12.py",
+      "bytes": 26746,
+      "sha256": "8dd50aeb2048ad4ab1a6c15973a47af73f8e3427f7fe40327f24aa6419f4a426",
+      "rows": 335,
+      "local_source": "数据/scripts/polish_B_manuscript_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/finalize_B_v1_0_2026-11-12.py",
+      "bytes": 23930,
+      "sha256": "67b6628f09fcd6273087593bdc2f87287bb27a7f83928eefde83b4a233e62a2c",
+      "rows": 368,
+      "local_source": "数据/scripts/finalize_B_v1_0_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/build_B_docx_2026-11-12.py",
+      "bytes": 11270,
+      "sha256": "53bb5455b7d03fbf3e62398d7b6752a88a753ea0e0bb759c5ac982624f55d90c",
+      "rows": 278,
+      "local_source": "数据/scripts/build_B_docx_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_manuscript_v1_0_2026-11-12.py",
+      "bytes": 16803,
+      "sha256": "11d152bac14e69e346e0765501b6353f25e7f89b13792a872397bd660e25206a",
+      "rows": 300,
+      "local_source": "数据/scripts/verify_B_manuscript_v1_0_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4203,
+      "sha256": "1a4c9423251204e4bf375450c55914a8e3d33c8b579af1b711de01037b1dc813",
+      "rows": 68,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1189,
+      "sha256": "ada0e5390e2b1d9e883ef8d3106a0ce5625b9358bc63c3eea32b60fca8278da9",
+      "rows": null,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 151,
+      "sha256": "024af0d266e537c42d7642291f14ebda33e479f265c739c4d4fa10e8d4fd3e44",
+      "rows": null,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 1715,
+      "sha256": "b37ce2fb85f7b1ffdfe16dc5488867cf01f658968c878442240c8206ab90dc25",
+      "rows": 30,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
+    },
+    {
+      "path": "DATA_AVAILABILITY_STATEMENT.md",
+      "bytes": 1201,
+      "sha256": "5e12cc7eaa8d0c7043755b483279c4b0b15dcb10a8dd394e294f2d77df4ecc0b",
+      "rows": 17,
+      "local_source": "generated from the repository's real html_url after creation",
+      "scan_layer": "root",
+      "note": "Written only after the repository existed; no placeholder URL"
+    }
+  ],
+  "script_adaptations": [
+    {
+      "file": "scripts/compute_B_uncertainty_2026-11-11.py",
+      "replacements": 2,
+      "from": "companion-namespace filename (withheld)",
+      "to": "res_B_china_pq_breadth_input.csv",
+      "reason": "Avoid publishing a bridge-namespace filename; content unchanged"
+    },
+    {
+      "file": "scripts/verify_B_uncertainty_calibre_2026-11-11.py",
+      "replacements": 2,
+      "from": "companion-namespace filename (withheld)",
+      "to": "res_B_china_pq_breadth_input.csv",
+      "reason": "Avoid publishing a bridge-namespace filename; content unchanged"
+    }
+  ],
+  "scan_ledger": [
+    {
+      "path": "data/processed/res_B_uncertainty_concentration_ci_2026-11-11.csv",
+      "items": [
+        "deprecated-value-flagged x1"
+      ]
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_misalignment_ci_revised_2026-11-11.csv",
+      "items": [
+        "deprecated-value-flagged x3"
+      ]
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_summary_2026-11-11.json",
+      "items": [
+        "deprecated-value-flagged x4"
+      ]
+    },
+    {
+      "path": "scripts/compute_B_uncertainty_2026-11-11.py",
+      "items": [
+        "firewall-guard-constant x2"
+      ]
+    },
+    {
+      "path": "scripts/finalize_B_v1_archive_2026-11-11.py",
+      "items": [
+        "firewall-guard-constant x1"
+      ]
+    },
+    {
+      "path": "scripts/verify_B_figures_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant (shipment-count literal)",
+        "firewall-guard-constant x4"
+      ]
+    },
+    {
+      "path": "scripts/verify_B_figure_count_and_citations_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant (shipment-count literal)",
+        "firewall-guard-constant x2"
+      ]
+    },
+    {
+      "path": "scripts/assemble_B_manuscript_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant x2"
+      ]
+    },
+    {
+      "path": "scripts/verify_B_manuscript_v0_8_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant (shipment-count literal)",
+        "firewall-guard-constant x5"
+      ]
+    },
+    {
+      "path": "scripts/polish_B_manuscript_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant (shipment-count literal)",
+        "firewall-guard-constant x4"
+      ]
+    },
+    {
+      "path": "scripts/verify_B_manuscript_v1_0_2026-11-12.py",
+      "items": [
+        "firewall-guard-constant (shipment-count literal)",
+        "firewall-guard-constant x6"
+      ]
+    }
+  ],
+  "repository": {
+    "owner": "kongdeyu0819-rgb",
+    "name": "who-pq-supply-burden-alignment-deposit",
+    "html_url": "https://github.com/kongdeyu0819-rgb/who-pq-supply-burden-alignment-deposit",
+    "tag": "v1.0.0"
+  }
+}

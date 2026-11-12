@@ -1,0 +1,319 @@
+{
+  "stamp": "2026-11-11",
+  "seed": 20261111,
+  "bootstrap_draws": 10000,
+  "block_bootstrap_draws": 5000,
+  "block_len": 3,
+  "hac_lag": 3,
+  "notes": [
+    "累积存量序列存在强正自相关；同一 OLS 的 t 区间为主口径（与登记点估计同模型），HAC 与残差 block bootstrap 区间为敏感性，审稿时须同时呈现，不可只报最窄者。HAC lag=3 为经验选择、未据数据定阶，n=25 未作小样本自由度校正，Methods 须交代。",
+    "HHI 4073.8 与复核后取数底座不自洽（实为复核前 408 行印度口径）；本次仅记录上报，未改写任何登记数字。4175.53 为复核后 648 行自洽值，作为派生统计与后续正文的采用值；是否回填 12/16 及工作记忆由孔老师单点裁定，不阻塞 Methods/Results 起草。",
+    "存量快照是完整清单而非随机样本，产品行 bootstrap 区间只表达构成波动；国别映射置信度扰动单独作为口径敏感性，两者不可混称抽样置信区间。",
+    "中国 PQ 广度的 Clopper–Pearson / Wilson 区间为「有限清单构成比的描述性区间」：在二项参考模型 k~Bin(n,p) 下刻画 k/n 的精确覆盖宽度，不代表超总体抽样误差，故与「清单为完整存量快照、点估计无抽样误差」不冲突；Methods 须写明其数学含义。",
+    "【2026-11-11 修订】RQ2 的供应份额 s 由「648 行全领域 FPP 国别分布」改为按 Therapeutic Area × Applicant 逐行 join 的病种特异分布（疟疾 98、结核 126、HIV 255 行，三病种均零未匹配，分母为各病种产品数）；旧口径 M 仅作留痕对照行，不进入正文。",
+    "M=Σ|s−b| 是两份额分布的 L1 距离，取值上界 2；疟疾/HIV 的 M 贴近上界主要反映「持证商国集合（29 国以内）与负担国集合（100+ 国）几乎不重叠」这一 PQ 清单固有结构，不等于供应量相对负担接近完全错配。故同报负担加权供应覆盖率 C与高负担组供应/负担份额比 R25 作为有区分度的备择指标；病种间 M 不可比（n=100/193/151、负担单位与年份范围不同），不得并列下结论。",
+    "M 的主不确定度为产品行级 bootstrap（只重抽 s 侧、b 固定，目标参数不变）；国家层重抽后各自重新归一化会改变目标参数且近上界时 percentile 区间必然左偏，仅记为敏感性。HAC lag=3 为经验选择、n=25 未作小样本自由度校正，AAPC 的 HAC/块自助区间只作敏感性，Methods 须交代。",
+    "国别码制：concentration_reviewed.csv 的 iso3 列实为 ISO2，GHO/WB 为 ISO3；不做转换则支持集不相交、M 恒等于 2。本次沿用 ISO 3166-1 的 29 国显式码表，逐国明细保留双码列。",
+    "GHO 本地快照 gho_hiv_pl.csv 仅覆盖 2000–2006 且为 PLHIV 绝对人数，与 2002–2026 观察窗严重错配；HIV 仅作补充材料，RQ2 主口径为疟疾＋结核。",
+    "负担份额由 GHO 指标值×人口（疟疾/TB）或 PLHIV 人数（HIV）归一化得到，同一指标内单位常数在归一化中抵消；疟疾指标原单位为每千高危人口，以总人口作代理会高估高危人群规模，属已登记的口径局限。"
+  ],
+  "revision_2026_11_11": {
+    "trigger": "审查结论：RQ2 供应份额 s 用错对象（全领域 648 行当作病种特异）",
+    "supply_scope": "disease_specific (Therapeutic Area x Applicant)",
+    "cross_check_script": "verify_B_disease_specific_supply_2026-11-11.py",
+    "cross_check": "三病种 M 与前25%份额基准 |Δ|=0；匹配率 98/98、255/255、126/126",
+    "aapc_main_ci": "OLS t 区间进 Results；HAC/块自助进 Methods 与补充材料",
+    "rq2_primary_diseases": [
+      "Malaria",
+      "Tuberculosis"
+    ],
+    "hiv": "仅补充材料（GHO HIV 快照 2000–2006）",
+    "index": "M 与 D 同报并给公式；另报 C 与 R25 两个有区分度的备择指标"
+  },
+  "aapc": {
+    "ALL_FPP": {
+      "point": 19.11,
+      "ci_ols": [
+        17.67,
+        20.57
+      ],
+      "ci_hac": [
+        16.76,
+        21.51
+      ],
+      "ci_block": [
+        17.14,
+        21.15
+      ],
+      "r2": 0.9745,
+      "acf1": 0.8779
+    },
+    "Malaria": {
+      "point": 24.85,
+      "ci_ols": [
+        21.54,
+        28.25
+      ],
+      "ci_hac": [
+        20.01,
+        29.89
+      ],
+      "ci_block": [
+        20.59,
+        29.32
+      ],
+      "r2": 0.9268,
+      "acf1": 0.7812
+    },
+    "HIV/AIDS": {
+      "point": 14.75,
+      "ci_ols": [
+        13.74,
+        15.77
+      ],
+      "ci_hac": [
+        13.22,
+        16.3
+      ],
+      "ci_block": [
+        13.47,
+        16.06
+      ],
+      "r2": 0.9782,
+      "acf1": 0.8459
+    },
+    "Tuberculosis": {
+      "point": 18.28,
+      "ci_ols": [
+        15.49,
+        21.14
+      ],
+      "ci_hac": [
+        13.78,
+        22.96
+      ],
+      "ci_block": [
+        14.76,
+        22.09
+      ],
+      "r2": 0.9021,
+      "acf1": 0.6807
+    }
+  },
+  "concentration": {
+    "hhi_registered": 4073.76,
+    "hhi_reviewed_exact": 4175.53,
+    "hhi_reviewed_from_rounded_share": 4174.84,
+    "hhi_boot_ci": [
+      3737.94,
+      4643.5
+    ],
+    "hhi_high_confidence_only": 4834.36,
+    "denominator": 648,
+    "mapping_sensitivity_rows": 59,
+    "cr1_cr4_cr8": {
+      "CR1_pct": {
+        "point": 63.73,
+        "ci": [
+          60.03,
+          67.44
+        ]
+      },
+      "CR4_pct": {
+        "point": 77.78,
+        "ci": [
+          75.15,
+          81.33
+        ]
+      },
+      "CR8_pct": {
+        "point": 86.57,
+        "ci": [
+          84.41,
+          89.35
+        ]
+      }
+    }
+  },
+  "china_breadth": {
+    "Malaria": {
+      "k": 24,
+      "n": 98,
+      "pct": 24.49,
+      "cp_ci": [
+        16.36,
+        34.21
+      ],
+      "wilson_ci": [
+        17.04,
+        33.86
+      ]
+    },
+    "HIV/AIDS": {
+      "k": 16,
+      "n": 255,
+      "pct": 6.27,
+      "cp_ci": [
+        3.63,
+        9.99
+      ],
+      "wilson_ci": [
+        3.9,
+        9.95
+      ]
+    },
+    "Tuberculosis": {
+      "k": 1,
+      "n": 126,
+      "pct": 0.79,
+      "cp_ci": [
+        0.02,
+        4.34
+      ],
+      "wilson_ci": [
+        0.14,
+        4.36
+      ]
+    },
+    "Covid-19": {
+      "k": 4,
+      "n": 19,
+      "pct": 21.05,
+      "cp_ci": [
+        6.05,
+        45.57
+      ],
+      "wilson_ci": [
+        8.51,
+        43.33
+      ]
+    },
+    "Reproductive health": {
+      "k": 4,
+      "n": 62,
+      "pct": 6.45,
+      "cp_ci": [
+        1.79,
+        15.7
+      ],
+      "wilson_ci": [
+        2.54,
+        15.45
+      ]
+    },
+    "Hepatitis B and C": {
+      "k": 3,
+      "n": 18,
+      "pct": 16.67,
+      "cp_ci": [
+        3.58,
+        41.42
+      ],
+      "wilson_ci": [
+        5.84,
+        39.22
+      ]
+    }
+  },
+  "misalignment": {
+    "Malaria": {
+      "unit": "per 1000 at risk",
+      "supply_scope": "disease_specific",
+      "supply_denominator": 98,
+      "n_supply_countries_active": 11,
+      "supply_ind_pct": 53.06,
+      "supply_chn_pct": 24.49,
+      "M": 1.9118,
+      "D": 0.9559,
+      "boot_ci_M_supply_rows": [
+        1.8505,
+        1.9527
+      ],
+      "boot_ci_M_country_sensitivity": [
+        1.6831,
+        1.9775
+      ],
+      "burden_weighted_supply_coverage_C": 0.3184,
+      "top25_coverage_ratio_R25": 0.067,
+      "M_common_support": 1.905,
+      "M_second_latest_year": 1.9174,
+      "top25pct_burden_share": 0.9144,
+      "top25pct_supply_share": 0.0612,
+      "M_all_area_s_legacy": 1.9489,
+      "top25pct_supply_share_all_area_legacy": 0.0154,
+      "n_countries": 100,
+      "n_burden_countries": 79,
+      "n_supply_countries_without_burden": 6,
+      "burden_year_range": [
+        2006,
+        2024
+      ]
+    },
+    "Tuberculosis": {
+      "unit": "per 100k",
+      "supply_scope": "disease_specific",
+      "supply_denominator": 126,
+      "n_supply_countries_active": 11,
+      "supply_ind_pct": 84.92,
+      "supply_chn_pct": 0.79,
+      "M": 1.3983,
+      "D": 0.6991,
+      "boot_ci_M_supply_rows": [
+        1.3354,
+        1.4539
+      ],
+      "boot_ci_M_country_sensitivity": [
+        0.801,
+        1.8669
+      ],
+      "burden_weighted_supply_coverage_C": 0.5174,
+      "top25_coverage_ratio_R25": 0.9535,
+      "M_common_support": 1.3983,
+      "M_second_latest_year": 1.3085,
+      "top25pct_burden_share": 0.9489,
+      "top25pct_supply_share": 0.9048,
+      "M_all_area_s_legacy": 1.2241,
+      "top25pct_supply_share_all_area_legacy": 0.7731,
+      "n_countries": 193,
+      "n_burden_countries": 193,
+      "n_supply_countries_without_burden": 0,
+      "burden_year_range": [
+        2004,
+        2024
+      ]
+    },
+    "HIV/AIDS": {
+      "unit": "PLHIV count",
+      "supply_scope": "disease_specific",
+      "supply_denominator": 255,
+      "n_supply_countries_active": 16,
+      "supply_ind_pct": 75.69,
+      "supply_chn_pct": 6.27,
+      "M": 1.976,
+      "D": 0.988,
+      "boot_ci_M_supply_rows": [
+        1.9603,
+        1.9953
+      ],
+      "boot_ci_M_country_sensitivity": [
+        1.8821,
+        1.9951
+      ],
+      "burden_weighted_supply_coverage_C": 0.2062,
+      "top25_coverage_ratio_R25": 0.0084,
+      "M_common_support": 1.8907,
+      "M_second_latest_year": 1.9762,
+      "top25pct_burden_share": 0.9284,
+      "top25pct_supply_share": 0.0078,
+      "M_all_area_s_legacy": 1.9344,
+      "top25pct_supply_share_all_area_legacy": 0.0448,
+      "n_countries": 151,
+      "n_burden_countries": 142,
+      "n_supply_countries_without_burden": 8,
+      "burden_year_range": [
+        2005,
+        2006
+      ]
+    }
+  }
+}

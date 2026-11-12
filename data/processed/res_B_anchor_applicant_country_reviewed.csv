@@ -1,0 +1,138 @@
+﻿applicant,hq_country,iso3,confidence,note,n_products,is_china
+Macleods Pharmaceuticals Ltd,印度,IN,high,,83,no
+Mylan Laboratories Ltd.,印度,IN,high,见上,43,no
+Lupin Ltd,印度,IN,high,,31,no
+Cipla Ltd,印度,IN,high,,30,no
+Micro Labs Limited,印度,IN,high,,30,no
+Aurobindo Pharma Ltd,印度,IN,high,,28,no
+Hetero Labs Ltd,印度,IN,high,,28,no
+Laurus Labs Limited,印度,IN,high,,18,no
+Guilin Pharmaceutical Co Ltd,中国,CN,high,,17,yes
+Ipca Laboratories Ltd,印度,IN,high,,17,no
+Strides Pharma Science Limited,印度,IN,high,,12,no
+MSN Laboratories Private Limited,印度,IN,high,,11,no
+Emcure Pharmaceuticals Limited,印度,IN,high,,9,no
+ViiV Healthcare BV,未解析,NL,high,ViiV=GSK/Pfizer HIV JV，BV=荷兰实体；西方MNC，非中国（LLM复核2026-11-07）,8,no
+Sun Pharmaceutical Industries Limited,印度,IN,high,,8,no
+Cadila Pharmaceuticals Ltd,印度,IN,high,,8,no
+S Kant Healthcare Ltd.,印度,IN,high,,8,no
+Senador Laboratories Private Limited,印度,IN,high,,8,no
+"Shanghai Desano Bio-Pharmaceutical Co., Ltd.",中国,CN,high,,7,yes
+"Guilin Pharmaceutical Co., Ltd.",中国,CN,high,,7,yes
+Ajanta Pharma Ltd,印度,IN,high,,7,no
+Antibiotice SA,未解析,RO,high,Antibiotice Iași，罗马尼亚国企药厂（LLM复核2026-11-07）,7,no
+Roche Registration GmbH,瑞士,CH,high,罗氏 HQ 瑞士,6,no
+Laboratorios León Farma SA,西班牙,ES,high,,6,no
+Celltrion Inc.,韩国,KR,high,,5,no
+Roche Products Limited,英国,GB,medium,罗氏 HQ 瑞士，英国实体,5,no
+Demo SA,瑞士,CH,medium,Demo SA 瑞士,5,no
+Gilead Sciences Ireland UC,美国,US,medium,Gilead HQ 美国，爱尔兰实体,5,no
+AbbVie Deutschland GmbH and Co. KG,德国,DE,high,,5,no
+McNeil Sweden AB,瑞典,SE,high,强生,5,no
+Novo Nordisk AS,丹麦,DK,high,,4,no
+ViiV Healthcare UK Limited,英国,GB,high,GSK/Pfizer JV,4,no
+Sanofi,法国,FR,high,,4,no
+Strides Pharma Global PTE Limited,印度,IN,medium,Strides 印度 HQ，新加坡实体,4,no
+Universal Corporation Ltd,巴基斯坦,PK,medium,疑似巴基斯坦,4,no
+Biosimilar Collaborations Ireland Limited,爱尔兰,IE,high,,3,no
+Dr Reddy's Laboratories Ltd,印度,IN,high,,3,no
+Janssen Research & Development LLC,美国,US,high,强生,3,no
+Janssen-Cilag International NV,比利时,BE,medium,杨森比利时/荷兰,3,no
+GL Pharma GmbH,奥地利,AT,medium,GL Pharma 奥地利,3,no
+Desano Pharmaceuticals Private Limited,中国,CN,medium,Desano 为上海德 Nano/CDMO，印度实体存疑→按中国 HQ,3,yes
+RV Lifesciences Limited,未解析,IN,high,RV Lifesciences，印度孟买CRAMS（LLM复核2026-11-07）,3,no
+Zydus Lifesciences Limited,印度,IN,high,,3,no
+Novartis Pharma AG,瑞士,CH,high,,3,no
+NV Organon,荷兰,NL,high,,3,no
+China Resources Zizhu Pharmaceutical Co Ltd,中国,CN,high,,3,yes
+Svizera Europe BV,印度,IN,medium,Svizera 印度 HQ，荷兰实体,3,no
+Zhejiang Huahai Pharmaceutical Co. Ltd.,中国,CN,high,,2,yes
+Macarthys Laboratories Limited,未解析,GB,high,Macarthys，英国制药商（LLM复核2026-11-07）,2,no
+Sanofi-Aventis Deutschland GmbH,法国,FR,medium,赛诺菲 HQ 法国，德国实体,2,no
+Regeneron Pharmaceuticals Inc.,美国,US,high,,2,no
+Sandoz GmbH,奥地利,AT,high,Sandoz HQ 奥地利,2,no
+Biocon Biologics Limited,未解析,IN,high,Biocon，印度班加罗尔生物药企（LLM复核2026-11-07）,2,no
+Farmak JSC,乌克兰,UA,high,,2,no
+Pfizer Limited,美国,US,medium,辉瑞 HQ 美国，英国实体,2,no
+PharmEvo (Pvt) Ltd.,巴基斯坦,PK,high,,2,no
+Swiss Pharma Nigeria Ltd,尼日利亚,NG,high,,2,no
+Shin Poong Pharmaceutical Co Ltd,韩国,KR,high,,2,no
+Egyptian International Pharmaceutical Industries,埃及,EG,high,,2,no
+Unique Pharmaceutical Laboratories (Mumbai),印度,IN,high,,2,no
+Eumedica Pharmaceuticals AG,瑞士,CH,high,,2,no
+"Shouguang Fukang Pharmaceutical Co., Ltd.",中国,CN,high,,2,yes
+"Reyoung Pharmaceutical Co., Ltd.",中国,CN,high,,2,yes
+ViiV Healthcare Pty Ltd,英国,GB,medium,见上,2,no
+"BrightGene Bio-Medical Technology Co., Ltd",中国,CN,high,,2,yes
+Alfasigma S.p.A.,意大利,IT,high,,2,no
+GlaxoSmithKline Australia Pty Ltd,英国,GB,medium,GSK HQ 英国，澳洲实体,2,no
+Velvet Med-Healthcare Solutions S.A,瑞士,CH,medium,SA 瑞士,2,no
+Mepro Pharmaceuticals Pvt. Ltd.,印度,IN,high,,2,no
+Jenapharm GmbH & Co. KG,德国,DE,high,,2,no
+PT Sanbe Farma,印度尼西亚,ID,high,,2,no
+Bayer AG,德国,DE,high,HQ,2,no
+AS KALCEKS,未解析,LV,high,Kalceks，拉脱维亚里加药企（LLM复核2026-11-07）,2,no
+HLL Lifecare Limited,印度,IN,high,,2,no
+Aurum Pharmaceuticals Ltd,英国,GB,high,,2,no
+JSC Grindeks,拉脱维亚,LV,high,,2,no
+Incepta Pharmaceuticals Ltd.,孟加拉,BD,high,,2,no
+Renata PLC,孟加拉,BD,high,,2,no
+BIAL-Portela & Ca. SA,葡萄牙,PT,high,,2,no
+"Laboratorio Reig Jofre, S.A.",西班牙,ES,high,,2,no
+Sandoz Pvt Ltd,印度,IN,high,Sandoz 奥地利 HQ，印度实体,2,no
+"Dong-A ST Co., Ltd.",韩国,KR,high,,2,no
+Esteve Pharmaceuticals GmbH,西班牙,ES,medium,Esteve 西班牙 HQ，德国子公司,2,no
+Chiesi Farmaceutici S.p.A.,意大利,IT,high,,1,no
+Serum Institute of India Pvt. Ltd.,印度,IN,high,,1,no
+Samsung Bioepis NL B.V.,韩国,KR,medium,三星 HQ 韩国，荷兰实体,1,no
+The ACME Laboratories Ltd,孟加拉,BD,high,,1,no
+International Partnership for Microbicides Belgium (IPM Belgium) AISBL,比利时,BE,high,,1,no
+Sanofi-aventis groupe,法国,FR,high,,1,no
+Merck Europe B.V.,德国,DE,medium,默克欧洲→德国 HQ,1,no
+Hainan Poly Pharma Co Ltd,中国,CN,high,,1,yes
+Sinopharm Zhijun (Shenzhen) Pharm Co. Ltd,中国,CN,high,,1,yes
+Everest Life Sciences LLC,美国,US,medium,LLC 美国实体，疑为离岸,1,no
+Anhui Biochem Bio-Pharmaceutical Co Ltd,中国,CN,high,,1,yes
+Beximco Pharmaceuticals Ltd,孟加拉,BD,high,,1,no
+Milan Laboratories (India) Pvt Ltd,印度,IN,high,,1,no
+Laboratorios Liconsa S.A.,西班牙,ES,high,,1,no
+Apotex Pharmachem Inc,加拿大,CA,high,,1,no
+European Egyptian Pharmaceuticals Industries Co,埃及,EG,high,,1,no
+"Shijiazhuang Lonzeal Pharmaceuticals Co., Ltd.",中国,CN,high,,1,yes
+Glaxo Wellcome UK Ltd,英国,GB,high,,1,no
+Laboratorios Basi - Industria Farmaceutica SA,西班牙,ES,high,,1,no
+Beijing Holley-Cotec Pharmaceuticals Co Ltd,中国,CN,high,,1,yes
+Quality Chemical Industries Limited,乌干达,UG,high,,1,no
+Novartis AG,瑞士,CH,high,,1,no
+Shionogi B.V.,日本,JP,medium,Shionogi 日本 HQ，荷兰实体,1,no
+Aspen SA Operations (Pty) Ltd,南非,ZA,high,,1,no
+Eisai Co Ltd,日本,JP,high,,1,no
+Laboratorios Liconsa SA,西班牙,ES,high,,1,no
+Edenbridge Pharmaceuticals LLC,美国,US,high,,1,no
+Medopharm Private Limited,印度,IN,high,,1,no
+Merck Healthcare KGaA,德国,DE,high,默克 KGaA 德国,1,no
+Indoco Remedies Limited,印度,IN,high,,1,no
+ACI HealthCare Limited,孟加拉,BD,medium,ACI 为孟加拉,1,no
+Rusan Pharma Ltd.,印度,IN,high,,1,no
+,未解析,ZZ,unresolved,申请人空白，1个产品行，无法解析，留作缺失（LLM复核2026-11-07）,1,no
+Bayer Oy,德国,DE,medium,见上,1,no
+Pfizer AB,美国,US,medium,见上,1,no
+Bayer plc,德国,DE,medium,Bayer 英国实体→HQ,1,no
+Shanghai Dahua Pharmaceutical Co Ltd,中国,CN,high,,1,yes
+Linepharma International Ltd,英国,GB,high,,1,no
+Acme Formulation Pvt. Limited,印度,IN,high,,1,no
+Inresa Arzneimittel GmbH,德国,DE,high,,1,no
+"Labesfal, Laboratorios Almiro SA",西班牙,ES,medium,见上,1,no
+Steril-Gene Life Sciences (P) Ltd,印度,IN,high,,1,no
+Joint-Stock Company Halychpharm,乌克兰,UA,high,,1,no
+Bayer S.A.,德国,DE,medium,Bayer 法国实体→HQ,1,no
+Tunggal Idaman Abdi  (PT),印度尼西亚,ID,high,,1,no
+Ferring International Center SA,瑞士,CH,high,,1,no
+Naari BV,荷兰,NL,high,,1,no
+Olpha AS,拉脱维亚,LV,medium,Olpha 拉脱维亚,1,no
+"Qilu Pharmaceutical Co.,Ltd",中国,CN,high,,1,yes
+LEKHIM Joint Stock Company,乌克兰,UA,high,,1,no
+PT. Dankos Farma,印度尼西亚,ID,high,,1,no
+Remington Pharmaceutical Industries (Pvt) Ltd,巴基斯坦,PK,high,,1,no
+Venus Pharma GmbH,德国,DE,high,,1,no
+Svizera Labs Pvt. Ltd.,印度,IN,high,,1,no
