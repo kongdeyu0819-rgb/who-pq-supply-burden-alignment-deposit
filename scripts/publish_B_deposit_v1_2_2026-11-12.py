@@ -138,49 +138,94 @@ def main() -> None:
     st, tree, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/trees",
                       {"tree": tree_items})
     assert st in (200, 201), f"tree 失败: {st} {tree}"
-    st, commit, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/commits",
-                        {"message": "B1 TMIH revision: WHO official malaria case-count denominator, v1.2.0",
-                         "tree": tree["sha"], "parents": [base_commit]})
-    assert st in (200, 201), f"commit 失败: {st} {commit}"
-    commit_sha = commit["sha"]
-    st, ref, _ = req(token, "PATCH",
-                     f"/repos/{owner}/{REPO_NAME}/git/refs/heads/{default_branch}",
-                     {"sha": commit_sha, "force": False})
-    assert st == 200, f"ref 前进失败: {st} {ref}"
+    st, basec, _ = req(token, "GET",
+                       f"/repos/{owner}/{REPO_NAME}/git/commits/{base_commit}")
+    assert st == 200, f"读 base commit 失败: {st} {str(basec)[:200]}"
+    base_tree = basec["tree"]["sha"]
 
-    # ---- 6) annotated tag + Release ----
-    st, tagobj, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/tags", {
-        "tag": TAG,
-        "message": "WHO official malaria estimated case counts as primary burden denominator",
-        "object": commit_sha, "type": "commit",
-        "tagger": {"name": "WorkBuddy deposit builder",
-                   "email": "deposit@users.noreply.github.com",
-                   "date": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")},
-    })
-    assert st in (200, 201), f"tag object 失败: {st} {str(tagobj)[:200]}"
-    st, tagref, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/refs",
-                        {"ref": f"refs/tags/{TAG}", "sha": tagobj["sha"]})
-    assert st in (200, 201), f"tag ref 失败: {st} {str(tagref)[:200]}"
+    # 幂等一：内容未变则复用当前 head commit，不制造空转提交
+    if tree["sha"] == base_tree:
+        commit_sha = base_commit
+        commit_action = "reused head commit (tree unchanged)"
+    else:
+        st, commit, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/commits",
+                            {"message": "B1 TMIH revision: WHO official malaria case-count denominator, v1.2.0",
+                             "tree": tree["sha"], "parents": [base_commit]})
+        assert st in (200, 201), f"commit 失败: {st} {commit}"
+        commit_sha = commit["sha"]
+        st, ref, _ = req(token, "PATCH",
+                         f"/repos/{owner}/{REPO_NAME}/git/refs/heads/{default_branch}",
+                         {"sha": commit_sha, "force": False})
+        assert st == 200, f"ref 前进失败: {st} {ref}"
+        commit_action = "created new commit and advanced branch"
 
+    # ---- 6) annotated tag + Release（幂等二／三）----
+    st, existing_tag, _ = req(token, "GET",
+                              f"/repos/{owner}/{REPO_NAME}/git/ref/tags/{TAG}")
+    tag_commit = None
+    if st == 200:
+        obj = existing_tag["object"]
+        if obj["type"] == "commit":
+            tag_commit = obj["sha"]
+        else:
+            st2, to, _ = req(token, "GET",
+                             f"/repos/{owner}/{REPO_NAME}/git/tags/{obj['sha']}")
+            if st2 == 200:
+                tag_commit = to["object"]["sha"]
+
+    if tag_commit == commit_sha:
+        tag_action = "reused existing annotated tag"
+    else:
+        st, tagobj, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/tags", {
+            "tag": TAG,
+            "message": "WHO official malaria estimated case counts as primary burden denominator",
+            "object": commit_sha, "type": "commit",
+            "tagger": {"name": "WorkBuddy deposit builder",
+                       "email": "deposit@users.noreply.github.com",
+                       "date": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")},
+        })
+        assert st in (200, 201), f"tag object 失败: {st} {str(tagobj)[:200]}"
+        st, tagref, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/git/refs",
+                            {"ref": f"refs/tags/{TAG}", "sha": tagobj["sha"]})
+        if st == 422 and "already exists" in json.dumps(tagref, ensure_ascii=False).lower():
+            # 同名 tag 已由前一次发布创建：仅把 ref 校正到当前 commit，不动 v1.0.0
+            st, tagref, _ = req(token, "PATCH",
+                                f"/repos/{owner}/{REPO_NAME}/git/refs/tags/{TAG}",
+                                {"sha": tagobj["sha"], "force": True})
+            assert st == 200, f"tag ref 校正失败: {st} {str(tagref)[:200]}"
+            tag_action = "advanced existing tag ref to current commit"
+        else:
+            assert st in (200, 201), f"tag ref 失败: {st} {str(tagref)[:200]}"
+            tag_action = "created annotated tag ref"
+
+    release_body = (
+        "Revision of the B1 deposit supporting the Tropical Medicine & International "
+        "Health submission. The primary malaria burden denominator is now the WHO "
+        "official estimated number of malaria cases (MALARIA_EST_CASES, 2024 "
+        "estimates); the earlier incidence-per-1,000-at-risk times total population "
+        "construction is retained only as a sensitivity comparison. Added: four WHO GHO "
+        "raw extracts with provenance, eight recomputed or robustness derived tables, "
+        "the regenerated main figures and twelve reproducible scripts. Country sets are "
+        "reconciled in res_B_country_set_reconciliation_2026-11-12.csv. The WHO "
+        "tuberculosis incident-case indicator is an external magnitude check only "
+        "because it contains no India records. Release v1.0.0 is retained unchanged "
+        "as the historical version. See MANIFEST.json for SHA-256 checksums and "
+        "REPRODUCE.md for the execution order. No proprietary, individual-level, "
+        "trade-flow or procurement data are included.")
     st, release, _ = req(token, "POST", f"/repos/{owner}/{REPO_NAME}/releases", {
         "tag_name": TAG,
         "name": "v1.2.0 — WHO official malaria denominator and full recomputation",
-        "body": ("Revision of the B1 deposit supporting the Tropical Medicine & International "
-                 "Health submission. The primary malaria burden denominator is now the WHO "
-                 "official estimated number of malaria cases (MALARIA_EST_CASES, 2024 "
-                 "estimates); the earlier incidence-per-1,000-at-risk times total population "
-                 "construction is retained only as a sensitivity comparison. Added: four WHO GHO "
-                 "raw extracts with provenance, eight recomputed or robustness derived tables, "
-                 "the regenerated main figures and twelve reproducible scripts. Country sets are "
-                 "reconciled in res_B_country_set_reconciliation_2026-11-12.csv. The WHO "
-                 "tuberculosis incident-case indicator is an external magnitude check only "
-                 "because it contains no India records. Release v1.0.0 is retained unchanged "
-                 "as the historical version. See MANIFEST.json for SHA-256 checksums and "
-                 "REPRODUCE.md for the execution order. No proprietary, individual-level, "
-                 "trade-flow or procurement data are included."),
+        "body": release_body,
         "draft": False, "prerelease": False,
     })
-    assert st in (200, 201), f"release 失败: {st} {str(release)[:200]}"
+    if st == 422 and "already_exists" in json.dumps(release, ensure_ascii=False):
+        st, release, _ = req(token, "GET",
+                             f"/repos/{owner}/{REPO_NAME}/releases/tags/{TAG}")
+        assert st == 200, f"复用既有 release 失败: {st} {str(release)[:200]}"
+        release_action = "reused existing release"
+    else:
+        assert st in (200, 201), f"release 失败: {st} {str(release)[:200]}"
+        release_action = "created release"
 
     # ---- 7) 只读核验 ----
     http_repo = anon(html_url)
@@ -218,6 +263,7 @@ def main() -> None:
         "release_url": release.get("html_url"),
         "commit_sha": commit_sha,
         "base_commit_sha": base_commit,
+        "idempotency": {"commit": commit_action, "tag": tag_action, "release": release_action},
         "default_branch": default_branch,
         "file_count": len(files),
         "total_bytes": sum(p.stat().st_size for p in files),
