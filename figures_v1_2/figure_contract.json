@@ -1,0 +1,46 @@
+{
+  "width_mm": 175.0,
+  "height_mm": 75.0,
+  "dpi_png": 600,
+  "dpi_tiff": 300,
+  "font_family": "Arial",
+  "font_sizes_pt": {
+    "axis_label": 8,
+    "tick": 7,
+    "panel": 9,
+    "legend": 7
+  },
+  "linewidth_pt": 1.2,
+  "capsize": 3,
+  "greys": [
+    "#1A1A1A",
+    "#4A4A4A",
+    "#808080",
+    "#B8B8B8"
+  ],
+  "hatch_order": [
+    "",
+    "///",
+    "...",
+    "\\\\"
+  ],
+  "marker_order": [
+    "o",
+    "s",
+    "D",
+    "^"
+  ],
+  "linestyle_order": [
+    "-",
+    "--",
+    "-.",
+    ":"
+  ],
+  "panel_label": "(A)/(B) via set_title loc=left",
+  "background": "opaque white, no alpha",
+  "alpha_policy": "forbid (RGB only)",
+  "spines": "top/right removed",
+  "export_names": "Figure{1,2,3}.{png,pdf,tif}",
+  "figure_numbers_inside_image": false,
+  "numeric_value_labels_inside_image": false
+}

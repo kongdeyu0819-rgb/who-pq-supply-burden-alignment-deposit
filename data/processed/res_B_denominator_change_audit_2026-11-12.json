@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-12",
+  "change": "Malaria burden denominator: incidence per 1 000 population at risk × total population → WHO official estimated malaria case counts",
+  "scope": "Only the malaria denominator changed. Tuberculosis and HIV/AIDS denominators are unchanged because their indicator denominators are total population and a direct count, respectively.",
+  "external_benchmark": {
+    "paired_country_years": 928,
+    "median_abs_relative_error": 0.0421,
+    "p90_abs_relative_error": 0.3474,
+    "share_within_5pct": 0.5259,
+    "india_in_TB_e_inc_num": false,
+    "verdict": "TB_e_inc_num cannot replace the TB burden denominator: India absent"
+  },
+  "data_source_limitations": [
+    "WHO GHO TB_e_inc_num contains no India (IND) records; India accounts for roughly a quarter of TB burden and is the largest certificate-holder country, so this indicator is used only as an external magnitude check.",
+    "WHO GHO has no absolute 'population at risk' indicator; the at-risk fraction was recovered diagnostically as 1 000 × estimated cases / estimated incidence, for bias documentation only.",
+    "The existing sparse GHO extracts use each country's latest available burden year; malaria now resolves to 2024 for all included countries."
+  ],
+  "diseases": {
+    "Malaria": {
+      "denominator_changed": true,
+      "primary_denominator": {
+        "indicator": "MALARIA_EST_CASES",
+        "official_name": "Estimated number of malaria cases",
+        "unit": "estimated cases (count)",
+        "local_file": "数据/raw/gho_mal_est_cases_2026-11-12.csv",
+        "burden_year_range": [
+          2024,
+          2024
+        ],
+        "records": 2723,
+        "official_absolute_indicator_not_used": "not applicable"
+      },
+      "comparison_denominator": {
+        "indicator": "MALARIA_EST_INCIDENCE",
+        "unit": "per 1 000 population at risk × total population",
+        "role": "sensitivity only, no longer a primary result",
+        "reproduces_old_derived_table": true
+      },
+      "before_total_population": {
+        "n_countries": 100,
+        "n_burden_countries": 79,
+        "M": 1.9118,
+        "D": 0.9559,
+        "C": 0.3184,
+        "R25": 0.067,
+        "top25pct_burden_share": 0.9144,
+        "top25pct_supply_share": 0.0612
+      },
+      "after_official_cases": {
+        "n_countries": 102,
+        "n_burden_countries": 81,
+        "M": 1.9225,
+        "D": 0.9613,
+        "C": 0.3082,
+        "R25": 0.0652,
+        "M_ci95": [
+          1.8613,
+          1.9634
+        ],
+        "top25pct_burden_share": 0.9392,
+        "top25pct_supply_share": 0.0612,
+        "top_quartile_n_countries": 26
+      },
+      "delta": {
+        "M": 0.0108,
+        "D": 0.0054,
+        "C": -0.0101,
+        "R25": -0.0018,
+        "top_b": 0.0247,
+        "top_s": 0.0
+      }
+    },
+    "Tuberculosis": {
+      "denominator_changed": false,
+      "primary_denominator": {
+        "indicator": "MDG_0000000020",
+        "official_name": "Incidence of tuberculosis (per 100 000 population per year) × total population",
+        "unit": "estimated incident cases (rate per 100 000 population × total population)",
+        "local_file": "数据/raw/gho_tb_inc.csv",
+        "burden_year_range": [
+          2004,
+          2024
+        ],
+        "records": "existing GHO TB incidence extract (957 rows, 197 countries); not refetched",
+        "official_absolute_indicator_not_used": "TB_e_inc_num excluded because it contains no India records"
+      },
+      "comparison_denominator": {
+        "indicator": "TB incidence per 100 000",
+        "unit": "per 100 000 population × total population",
+        "role": "identical to primary; denominator unchanged",
+        "reproduces_old_derived_table": true
+      },
+      "before_total_population": {
+        "n_countries": 193,
+        "n_burden_countries": 193,
+        "M": 1.3983,
+        "D": 0.6991,
+        "C": 0.5174,
+        "R25": 0.9535,
+        "top25pct_burden_share": 0.9489,
+        "top25pct_supply_share": 0.9048
+      },
+      "after_official_cases": {
+        "n_countries": 193,
+        "n_burden_countries": 193,
+        "M": 1.3983,
+        "D": 0.6991,
+        "C": 0.5174,
+        "R25": 0.9535,
+        "M_ci95": [
+          1.3354,
+          1.4539
+        ],
+        "top25pct_burden_share": 0.9489,
+        "top25pct_supply_share": 0.9048,
+        "top_quartile_n_countries": 49
+      },
+      "delta": {
+        "M": 0.0,
+        "D": 0.0,
+        "C": 0.0,
+        "R25": 0.0,
+        "top_b": 0.0,
+        "top_s": 0.0
+      }
+    },
+    "HIV/AIDS": {
+      "denominator_changed": false,
+      "primary_denominator": {
+        "indicator": "PLHIV count (existing GHO extract)",
+        "official_name": "People living with HIV (existing extract)",
+        "unit": "PLHIV (count)",
+        "local_file": "数据/raw/gho_hiv_pl.csv",
+        "burden_year_range": [
+          2005,
+          2006
+        ],
+        "records": "existing GHO PLHIV count extract; not refetched in this round",
+        "official_absolute_indicator_not_used": "not applicable"
+      },
+      "comparison_denominator": {
+        "indicator": "PLHIV count (existing GHO extract)",
+        "unit": "PLHIV (count)",
+        "role": "identical to primary; denominator unchanged",
+        "reproduces_old_derived_table": true
+      },
+      "before_total_population": {
+        "n_countries": 151,
+        "n_burden_countries": 142,
+        "M": 1.976,
+        "D": 0.988,
+        "C": 0.2062,
+        "R25": 0.0084,
+        "top25pct_burden_share": 0.9284,
+        "top25pct_supply_share": 0.0078
+      },
+      "after_official_cases": {
+        "n_countries": 151,
+        "n_burden_countries": 142,
+        "M": 1.976,
+        "D": 0.988,
+        "C": 0.2062,
+        "R25": 0.0084,
+        "M_ci95": [
+          1.9603,
+          1.9953
+        ],
+        "top25pct_burden_share": 0.9284,
+        "top25pct_supply_share": 0.0078,
+        "top_quartile_n_countries": 38
+      },
+      "delta": {
+        "M": 0.0,
+        "D": 0.0,
+        "C": 0.0,
+        "R25": 0.0,
+        "top_b": 0.0,
+        "top_s": 0.0
+      }
+    }
+  }
+}

@@ -66,3 +66,8 @@ Health Observatory, World Bank World Development Indicators).
 
 Release `v1.0.0` is the version cited in the manuscript's data accessibility
 statement. Generated 2026-11-12.
+
+
+## Version v1.2.0 (12 November 2026)
+
+The primary malaria burden denominator is now the WHO official estimated number of malaria cases (`MALARIA_EST_CASES`, 2024 estimates). The previous incidence-per-1,000-at-risk-times-total-population construction is retained only as a sensitivity comparison. Additional contents: four raw GHO extracts and their provenance record, eight recomputed derived tables, `figures_v1_2/` (the three regenerated main figures with captions, drawing contract and manifest), and twelve reproducible v1.2 scripts. Country sets are reconciled in `data/processed/res_B_country_set_reconciliation_2026-11-12.csv`; the WHO tuberculosis case-count indicator is used only as an external magnitude check because it contains no India records. Release v1.0.0 is retained unchanged.

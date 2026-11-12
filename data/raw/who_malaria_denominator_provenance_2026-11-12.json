@@ -1,0 +1,89 @@
+{
+  "fetch_date": "2026-11-12",
+  "fetched_at": "2026-11-12T19:40:50+09:00",
+  "api_base": "https://ghoapi.azureedge.net/api",
+  "indicator_catalog_url": "https://ghoapi.azureedge.net/api/Indicator",
+  "indicator_catalog_size": 3092,
+  "spatial_filter": "SpatialDimType == COUNTRY, ISO3 alpha-3 only",
+  "dimension_filter": "Dim1/Dim2/Dim3 must be empty",
+  "deduplication": "one record per (iso3, year); duplicates counted, never silently kept",
+  "credential": "none required; public WHO API",
+  "files": {
+    "mal_est_cases": {
+      "indicator_code": "MALARIA_EST_CASES",
+      "official_indicator_name": "Estimated number of malaria cases",
+      "request_url": "https://ghoapi.azureedge.net/api/MALARIA_EST_CASES",
+      "api_pages": 1,
+      "raw_records": 2898,
+      "accepted_records": 2723,
+      "skipped": {
+        "non_country_aggregate": 175
+      },
+      "year_min": 2000,
+      "year_max": 2024,
+      "distinct_years": 25,
+      "n_countries": 110,
+      "value_field": "NumericValue (WHO point estimate)",
+      "uncertainty_field": "Low / High (WHO published interval)",
+      "source_date_values": {
+        "2025-12-19T14:14:17.45+01:00": 2723
+      },
+      "local_file": "数据/raw/gho_mal_est_cases_2026-11-12.csv",
+      "local_bytes": 210611,
+      "local_sha256": "7abf3c0a62308fc0df0829913feacb88ec39b20b3882ac55c39bac463fbacf9c"
+    },
+    "mal_est_incidence": {
+      "indicator_code": "MALARIA_EST_INCIDENCE",
+      "official_indicator_name": "Estimated malaria incidence (per 1000 population at risk)",
+      "request_url": "https://ghoapi.azureedge.net/api/MALARIA_EST_INCIDENCE",
+      "api_pages": 1,
+      "raw_records": 2855,
+      "accepted_records": 2680,
+      "skipped": {
+        "non_country_aggregate": 175
+      },
+      "year_min": 2000,
+      "year_max": 2024,
+      "distinct_years": 25,
+      "n_countries": 110,
+      "value_field": "NumericValue (WHO point estimate)",
+      "uncertainty_field": "Low / High (WHO published interval)",
+      "source_date_values": {
+        "2025-12-19T14:24:05.143+01:00": 2680
+      },
+      "local_file": "数据/raw/gho_mal_est_incidence_2026-11-12.csv",
+      "local_bytes": 243183,
+      "local_sha256": "426bb2f963ca1c96fa735aeb63196d8fc67f6f160d117ef93ce7b65705039ce5"
+    },
+    "tb_est_cases": {
+      "indicator_code": "TB_e_inc_num",
+      "official_indicator_name": "Number of incident tuberculosis cases",
+      "request_url": "https://ghoapi.azureedge.net/api/TB_e_inc_num",
+      "api_pages": 1,
+      "raw_records": 5299,
+      "accepted_records": 5013,
+      "skipped": {
+        "non_country_aggregate": 286
+      },
+      "year_min": 2000,
+      "year_max": 2025,
+      "distinct_years": 26,
+      "n_countries": 196,
+      "value_field": "NumericValue (WHO point estimate)",
+      "uncertainty_field": "Low / High (WHO published interval)",
+      "source_date_values": {
+        "2026-11-11T15:16:03.543+01:00": 5013
+      },
+      "local_file": "数据/raw/gho_tb_est_cases_2026-11-12.csv",
+      "local_bytes": 393856,
+      "local_sha256": "c55a4d1f402ea1d69171cd7e300b02d0767901adf7639dcda2e52dde39ff2c08"
+    }
+  },
+  "consistency_check": {
+    "existing_extract": "数据/raw/gho_mal_inc.csv",
+    "existing_extract_rows": 952,
+    "compared_head_rows": 40,
+    "mismatches_against_MALARIA_EST_INCIDENCE": [],
+    "verdict": "same WHO indicator"
+  }
+}

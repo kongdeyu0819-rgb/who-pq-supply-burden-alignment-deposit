@@ -1,118 +1,72 @@
 {
   "schema": "B1-TMIH-deposit-manifest-v1",
-  "built_at_utc": "2026-11-12T06:56:13+00:00",
+  "built_at_utc": "2026-11-12T14:41:51+00:00",
   "listing_snapshot": "15 September 2026",
   "observation_window": "2002-2026 (25 years, inclusive)",
   "repository_purpose": "Public data and code deposit supporting the B1 TMIH manuscript",
   "firewall": "Only public aggregate institutional data and derived results; companion-paper, trade-flow and single-procurement assets excluded; no credentials",
   "files": [
     {
-      "path": "data/raw/who_pq_fpp_2026-09-15.csv",
-      "bytes": 130007,
-      "sha256": "98998658f3afd926e85ef106e24f58d89b185ca133444c4ce637127251028dbd",
-      "rows": 650,
-      "local_source": "数据/raw/who_pq_fpp_2026-09-15.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "path": ".gitignore",
+      "bytes": 151,
+      "sha256": "024af0d266e537c42d7642291f14ebda33e479f265c739c4d4fa10e8d4fd3e44",
+      "rows": null,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
     },
     {
-      "path": "data/raw/who_pq_api_2026-09-15.csv",
-      "bytes": 23118,
-      "sha256": "c932bdc8375bf3307e662bd8d37cf23b149801d9415a41c6b29e0aa5be1fb135",
-      "rows": 198,
-      "local_source": "数据/raw/who_pq_api_2026-09-15.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "path": "DATA_AVAILABILITY_STATEMENT.md",
+      "bytes": 1642,
+      "sha256": "3d77e075bad1c9b3875d582722df5981714f8fae812fe9fceb308e04b9222211",
+      "rows": 17,
+      "local_source": "generated from the repository's real html_url after creation",
+      "scan_layer": "root",
+      "note": "Written only after the repository existed; no placeholder URL"
     },
     {
-      "path": "data/raw/who_pq_vaccines_2026-09-15.csv",
-      "bytes": 48152,
-      "sha256": "4caa702aef0ce435c6d43cb28302c39cd34de5b152e3def732522e66a995175f",
-      "rows": 286,
-      "local_source": "数据/raw/who_pq_vaccines_2026-09-15.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "path": "LICENSE",
+      "bytes": 1189,
+      "sha256": "ada0e5390e2b1d9e883ef8d3106a0ce5625b9358bc63c3eea32b60fca8278da9",
+      "rows": null,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
     },
     {
-      "path": "data/raw/who_pq_ivd_2026-09-15.csv",
-      "bytes": 80865,
-      "sha256": "7f3dc5b8a13e53c0ad39119fa4ead063436f041719c34e2b4763676665a0d6f8",
-      "rows": 436,
-      "local_source": "数据/raw/who_pq_ivd_2026-09-15.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "path": "README.md",
+      "bytes": 5076,
+      "sha256": "220dbfccc67fcd3d1c643823174edbd0de3958a6b40d09ebdbc1d9ce46490ae2",
+      "rows": 68,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
     },
     {
-      "path": "data/raw/gho_mal_inc.csv",
-      "bytes": 19908,
-      "sha256": "c6d30180cd90f766d67197608b3dd14e76f9fcb8d7ebe7e68964384528fb37b7",
-      "rows": 953,
-      "local_source": "数据/raw/gho_mal_inc.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "path": "REPRODUCE.md",
+      "bytes": 2759,
+      "sha256": "f6337c059a4ffcd24c1a37ffdbf2eb77a175bfb735569d92ce76c96ef856b227",
+      "rows": 30,
+      "local_source": "generated",
+      "scan_layer": "root",
+      "note": ""
     },
     {
-      "path": "data/raw/gho_hiv_pl.csv",
-      "bytes": 16968,
-      "sha256": "bfa9c8000468e3c709d9bc4fe410394e33b57c2d938e68bea8a899497c081bee",
-      "rows": 958,
-      "local_source": "数据/raw/gho_hiv_pl.csv",
+      "path": "data/processed/res_B_aapc_robustness_2026-11-12.csv",
+      "bytes": 800,
+      "sha256": "0e60b5e1640e284ef00bd5f899bde7e56062a174c4a662dae53a2140003ae469",
+      "local_source": "数据/processed/res_B_aapc_robustness_2026-11-12.csv",
       "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 4
     },
     {
-      "path": "data/raw/gho_tb_inc.csv",
-      "bytes": 14562,
-      "sha256": "363cf7efec4939e2887040423b3f163d398dc0a6f5aa9917533366a6609dc151",
-      "rows": 958,
-      "local_source": "数据/raw/gho_tb_inc.csv",
+      "path": "data/processed/res_B_aapc_robustness_2026-11-12.json",
+      "bytes": 2699,
+      "sha256": "7a2652e4695469f187af4787fd1d10d5923a96a4451dc5f435dbae365d321794",
+      "local_source": "数据/processed/res_B_aapc_robustness_2026-11-12.json",
       "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
-    },
-    {
-      "path": "data/raw/gho_uhc.csv",
-      "bytes": 13847,
-      "sha256": "d61eef7c1a368618e5453de0d7a3e7fb359a3d27a7ae5e057abc21c73ef6080f",
-      "rows": 923,
-      "local_source": "数据/raw/gho_uhc.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
-    },
-    {
-      "path": "data/raw/wb_pop.csv",
-      "bytes": 127509,
-      "sha256": "f2949b5a5a2534acd1e4822819577e76e79f40daf0dfce44ad5a858a67697d3d",
-      "rows": 6241,
-      "local_source": "数据/raw/wb_pop.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
-    },
-    {
-      "path": "data/raw/wb_gdp_pc.csv",
-      "bytes": 163241,
-      "sha256": "83f7a89b5c0971e55f4a13f731ed7b4793fd2cd8c09e4af6d1f4db0b19b4a0de",
-      "rows": 6075,
-      "local_source": "数据/raw/wb_gdp_pc.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
-    },
-    {
-      "path": "data/raw/wb_che_pc.csv",
-      "bytes": 131103,
-      "sha256": "01401bceae815c369c92bac7e4e7dc9bf51fc235f8d62e490a3977249e76de9b",
-      "rows": 5570,
-      "local_source": "数据/raw/wb_che_pc.csv",
-      "scan_layer": "data",
-      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
-    },
-    {
-      "path": "data/processed/res_B_anchor_year_counts.csv",
-      "bytes": 542,
-      "sha256": "8e6a411792acdea233136150401479725520edbc61f13b4dcf8993827afd4fbc",
-      "rows": 26,
-      "local_source": "数据/processed/res_B_anchor_year_counts.csv",
-      "scan_layer": "data",
-      "note": "Authoritative derived table"
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation"
     },
     {
       "path": "data/processed/res_B_anchor_apc.csv",
@@ -133,15 +87,6 @@
       "note": "Authoritative derived table"
     },
     {
-      "path": "data/processed/res_B_anchor_concentration_reviewed.csv",
-      "bytes": 505,
-      "sha256": "632273efb91937c93c6d665491cfa4b949d67682d0fb6ee1707b012ded166c2e",
-      "rows": 30,
-      "local_source": "数据/processed/res_B_anchor_concentration_reviewed.csv",
-      "scan_layer": "data",
-      "note": "Authoritative derived table"
-    },
-    {
       "path": "data/processed/res_B_anchor_china_summary_reviewed.csv",
       "bytes": 1179,
       "sha256": "536366299670731e251d92ba2b09b93b2a6d345001d00d12cfc2128cab9b6805",
@@ -151,11 +96,100 @@
       "note": "Authoritative derived table"
     },
     {
+      "path": "data/processed/res_B_anchor_concentration_reviewed.csv",
+      "bytes": 505,
+      "sha256": "632273efb91937c93c6d665491cfa4b949d67682d0fb6ee1707b012ded166c2e",
+      "rows": 30,
+      "local_source": "数据/processed/res_B_anchor_concentration_reviewed.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_anchor_year_counts.csv",
+      "bytes": 542,
+      "sha256": "8e6a411792acdea233136150401479725520edbc61f13b4dcf8993827afd4fbc",
+      "rows": 26,
+      "local_source": "数据/processed/res_B_anchor_year_counts.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_burden_by_country_2026-11-12.csv",
+      "bytes": 23540,
+      "sha256": "8ac18e7747fcd203224d86f1bb95a2d57fa4c716db168fbd9766054db31e7c4e",
+      "local_source": "数据/processed/res_B_burden_by_country_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 446
+    },
+    {
+      "path": "data/processed/res_B_burden_primary_2026-11-12.csv",
+      "bytes": 1848,
+      "sha256": "b4e6ea07c404ee008a15e05e074ddf3827b9ca0616235eb78a1515515967d2ee",
+      "local_source": "数据/processed/res_B_burden_primary_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 3
+    },
+    {
+      "path": "data/processed/res_B_burden_sensitivity_2026-11-12.csv",
+      "bytes": 2449,
+      "sha256": "6c4a6e3bc28dc11431b149781fe75ef8478d64d29a0df2e5246664e3cc52ada6",
+      "local_source": "数据/processed/res_B_burden_sensitivity_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 12
+    },
+    {
+      "path": "data/processed/res_B_china_pq_breadth_input.csv",
+      "bytes": 5867,
+      "sha256": "66e9211529b3b16e8cb6b6260f9da4540c5ade3c9c702213d3af5fbb6aca3b78",
+      "rows": 53,
+      "local_source": "data/processed (PQ-side China projection, companion-namespace name withheld)",
+      "scan_layer": "data",
+      "note": "Byte-identical copy under a neutral name; PQ-side projection only (applicant, inn, therapeutic_area, pq_year), no trade/destination fields"
+    },
+    {
+      "path": "data/processed/res_B_country_set_reconciliation_2026-11-12.csv",
+      "bytes": 1686,
+      "sha256": "d5f061da60d62849b900fc797e5c8e093481a22c28f3798eb7183e41f452a531",
+      "local_source": "数据/processed/res_B_country_set_reconciliation_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 9
+    },
+    {
+      "path": "data/processed/res_B_denominator_change_audit_2026-11-12.json",
+      "bytes": 6315,
+      "sha256": "12f51719f8f17e8c38481ac997948873b2a7058248ae0d8e0448640dbff98231",
+      "local_source": "数据/processed/res_B_denominator_change_audit_2026-11-12.json",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation"
+    },
+    {
+      "path": "data/processed/res_B_tb_external_benchmark_2026-11-12.csv",
+      "bytes": 41198,
+      "sha256": "ef672457840abe4125e5627619cd306b66c08476acc7be80239067c239a6a23e",
+      "local_source": "数据/processed/res_B_tb_external_benchmark_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "v1.2 denominator recomputation / robustness / country-set reconciliation",
+      "rows": 928
+    },
+    {
       "path": "data/processed/res_B_uncertainty_apc_ci_2026-11-11.csv",
       "bytes": 1519,
       "sha256": "fce53197c731fc21585893c226a9c19df46633b45f5d6296004586a0796dcc93",
       "rows": 5,
       "local_source": "数据/processed/res_B_uncertainty_apc_ci_2026-11-11.csv",
+      "scan_layer": "data",
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
+      "bytes": 2019,
+      "sha256": "0f3e844a26307963a98cd4ca87e1542adebfa9e1219f7536c8da837fc9b6baa3",
+      "rows": 7,
+      "local_source": "数据/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
       "scan_layer": "data",
       "note": "Authoritative derived table"
     },
@@ -178,20 +212,11 @@
       "note": "Authoritative derived table"
     },
     {
-      "path": "data/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
-      "bytes": 2019,
-      "sha256": "0f3e844a26307963a98cd4ca87e1542adebfa9e1219f7536c8da837fc9b6baa3",
-      "rows": 7,
-      "local_source": "数据/processed/res_B_uncertainty_china_breadth_ci_2026-11-11.csv",
-      "scan_layer": "data",
-      "note": "Authoritative derived table"
-    },
-    {
-      "path": "data/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
-      "bytes": 1569,
-      "sha256": "815a4df0c721c68967fc664ca0954b8805511036d92967ca7af6bdc3e6c99102",
-      "rows": 39,
-      "local_source": "数据/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
+      "path": "data/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
+      "bytes": 24992,
+      "sha256": "5b1710b964b3820254bbcc5ae9e0e46af82b17507804dde779f842b4c2f7963b",
+      "rows": 445,
+      "local_source": "数据/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
       "scan_layer": "data",
       "note": "Authoritative derived table"
     },
@@ -205,15 +230,6 @@
       "note": "Authoritative derived table"
     },
     {
-      "path": "data/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
-      "bytes": 24992,
-      "sha256": "5b1710b964b3820254bbcc5ae9e0e46af82b17507804dde779f842b4c2f7963b",
-      "rows": 445,
-      "local_source": "数据/processed/res_B_uncertainty_misalignment_by_country_revised_2026-11-11.csv",
-      "scan_layer": "data",
-      "note": "Authoritative derived table"
-    },
-    {
       "path": "data/processed/res_B_uncertainty_summary_2026-11-11.json",
       "bytes": 9928,
       "sha256": "ce88109e84ba4775ad059cf26157804850b96093d75eaef295e67b6433a1251e",
@@ -223,13 +239,147 @@
       "note": "Authoritative derived table"
     },
     {
-      "path": "data/processed/res_B_china_pq_breadth_input.csv",
-      "bytes": 5867,
-      "sha256": "66e9211529b3b16e8cb6b6260f9da4540c5ade3c9c702213d3af5fbb6aca3b78",
-      "rows": 53,
-      "local_source": "data/processed (PQ-side China projection, companion-namespace name withheld)",
+      "path": "data/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
+      "bytes": 1569,
+      "sha256": "815a4df0c721c68967fc664ca0954b8805511036d92967ca7af6bdc3e6c99102",
+      "rows": 39,
+      "local_source": "数据/processed/res_B_uncertainty_supply_by_area_2026-11-11.csv",
       "scan_layer": "data",
-      "note": "Byte-identical copy under a neutral name; PQ-side projection only (applicant, inn, therapeutic_area, pq_year), no trade/destination fields"
+      "note": "Authoritative derived table"
+    },
+    {
+      "path": "data/raw/gho_hiv_pl.csv",
+      "bytes": 16968,
+      "sha256": "bfa9c8000468e3c709d9bc4fe410394e33b57c2d938e68bea8a899497c081bee",
+      "rows": 958,
+      "local_source": "数据/raw/gho_hiv_pl.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_mal_est_cases_2026-11-12.csv",
+      "bytes": 210611,
+      "sha256": "7abf3c0a62308fc0df0829913feacb88ec39b20b3882ac55c39bac463fbacf9c",
+      "local_source": "数据/raw/gho_mal_est_cases_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "WHO GHO official indicator extract / provenance, fetched 12 November 2026",
+      "rows": 2723
+    },
+    {
+      "path": "data/raw/gho_mal_est_incidence_2026-11-12.csv",
+      "bytes": 243183,
+      "sha256": "426bb2f963ca1c96fa735aeb63196d8fc67f6f160d117ef93ce7b65705039ce5",
+      "local_source": "数据/raw/gho_mal_est_incidence_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "WHO GHO official indicator extract / provenance, fetched 12 November 2026",
+      "rows": 2680
+    },
+    {
+      "path": "data/raw/gho_mal_inc.csv",
+      "bytes": 19908,
+      "sha256": "c6d30180cd90f766d67197608b3dd14e76f9fcb8d7ebe7e68964384528fb37b7",
+      "rows": 953,
+      "local_source": "数据/raw/gho_mal_inc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_tb_est_cases_2026-11-12.csv",
+      "bytes": 393856,
+      "sha256": "c55a4d1f402ea1d69171cd7e300b02d0767901adf7639dcda2e52dde39ff2c08",
+      "local_source": "数据/raw/gho_tb_est_cases_2026-11-12.csv",
+      "scan_layer": "data",
+      "note": "WHO GHO official indicator extract / provenance, fetched 12 November 2026",
+      "rows": 5013
+    },
+    {
+      "path": "data/raw/gho_tb_inc.csv",
+      "bytes": 14562,
+      "sha256": "363cf7efec4939e2887040423b3f163d398dc0a6f5aa9917533366a6609dc151",
+      "rows": 958,
+      "local_source": "数据/raw/gho_tb_inc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/gho_uhc.csv",
+      "bytes": 13847,
+      "sha256": "d61eef7c1a368618e5453de0d7a3e7fb359a3d27a7ae5e057abc21c73ef6080f",
+      "rows": 923,
+      "local_source": "数据/raw/gho_uhc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_che_pc.csv",
+      "bytes": 131103,
+      "sha256": "01401bceae815c369c92bac7e4e7dc9bf51fc235f8d62e490a3977249e76de9b",
+      "rows": 5570,
+      "local_source": "数据/raw/wb_che_pc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_gdp_pc.csv",
+      "bytes": 163241,
+      "sha256": "83f7a89b5c0971e55f4a13f731ed7b4793fd2cd8c09e4af6d1f4db0b19b4a0de",
+      "rows": 6075,
+      "local_source": "数据/raw/wb_gdp_pc.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/wb_pop.csv",
+      "bytes": 127509,
+      "sha256": "f2949b5a5a2534acd1e4822819577e76e79f40daf0dfce44ad5a858a67697d3d",
+      "rows": 6241,
+      "local_source": "数据/raw/wb_pop.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_malaria_denominator_provenance_2026-11-12.json",
+      "bytes": 3454,
+      "sha256": "e9ba0192e16c0ad26371c243e37b63fbac29f34f8a741fc4550134540642a7ea",
+      "local_source": "数据/raw/who_malaria_denominator_provenance_2026-11-12.json",
+      "scan_layer": "data",
+      "note": "WHO GHO official indicator extract / provenance, fetched 12 November 2026"
+    },
+    {
+      "path": "data/raw/who_pq_api_2026-09-15.csv",
+      "bytes": 23118,
+      "sha256": "c932bdc8375bf3307e662bd8d37cf23b149801d9415a41c6b29e0aa5be1fb135",
+      "rows": 198,
+      "local_source": "数据/raw/who_pq_api_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_fpp_2026-09-15.csv",
+      "bytes": 130007,
+      "sha256": "98998658f3afd926e85ef106e24f58d89b185ca133444c4ce637127251028dbd",
+      "rows": 650,
+      "local_source": "数据/raw/who_pq_fpp_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_ivd_2026-09-15.csv",
+      "bytes": 80865,
+      "sha256": "7f3dc5b8a13e53c0ad39119fa4ead063436f041719c34e2b4763676665a0d6f8",
+      "rows": 436,
+      "local_source": "数据/raw/who_pq_ivd_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
+    },
+    {
+      "path": "data/raw/who_pq_vaccines_2026-09-15.csv",
+      "bytes": 48152,
+      "sha256": "4caa702aef0ce435c6d43cb28302c39cd34de5b152e3def732522e66a995175f",
+      "rows": 286,
+      "local_source": "数据/raw/who_pq_vaccines_2026-09-15.csv",
+      "scan_layer": "data",
+      "note": "Public institutional aggregate extract; downloaded 15 September 2026"
     },
     {
       "path": "figures/Figure1.png",
@@ -286,31 +436,52 @@
       "note": ""
     },
     {
-      "path": "scripts/compute_B_uncertainty_2026-11-11.py",
-      "bytes": 40602,
-      "sha256": "b4c1ff6731573abd314e26f847b95d798efcdde71649496c10960c053f21fe6d",
-      "rows": 805,
-      "local_source": "数据/scripts/compute_B_uncertainty_2026-11-11.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+      "path": "figures_v1_2/Figure1.png",
+      "bytes": 259385,
+      "sha256": "853e9be24b6f214453b014f01310fc7e76193a74da0564c8f0291df0295a9550",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/Figure1.png",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
     },
     {
-      "path": "scripts/verify_B_uncertainty_calibre_2026-11-11.py",
-      "bytes": 5220,
-      "sha256": "83cd7fa272474aa33836a3ea29583d123a3b678626b56056693a119b28f2a7f2",
-      "rows": 114,
-      "local_source": "数据/scripts/verify_B_uncertainty_calibre_2026-11-11.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+      "path": "figures_v1_2/Figure2.png",
+      "bytes": 210898,
+      "sha256": "9fd0228c525ba327e33bd6a18b8a5ddae775c8b7bf000c62da283b06b98dabd2",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/Figure2.png",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
     },
     {
-      "path": "scripts/verify_B_disease_specific_supply_2026-11-11.py",
-      "bytes": 8746,
-      "sha256": "9d04668d1d73f1f0799aea957867b9ccabd22f45e3778d81cba570e49b790162",
-      "rows": 216,
-      "local_source": "数据/scripts/verify_B_disease_specific_supply_2026-11-11.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+      "path": "figures_v1_2/Figure3.png",
+      "bytes": 190577,
+      "sha256": "844abd5a9bdbd33ec9299a5f27f2b7b67a25d2d5027765ed064fbb75530a9fa5",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/Figure3.png",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
+    },
+    {
+      "path": "figures_v1_2/figure_captions.md",
+      "bytes": 2653,
+      "sha256": "0e4b70e6f01bb3bc8910a8aacba200cb5c6e2f93125896dbb56b48208c451031",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/figure_captions.md",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
+    },
+    {
+      "path": "figures_v1_2/figure_contract.json",
+      "bytes": 852,
+      "sha256": "9a2380af4be2cb8a601955537b8f48084c4beee0c2eee0d72f71941a1d0fdbb8",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/figure_contract.json",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
+    },
+    {
+      "path": "figures_v1_2/manifest.json",
+      "bytes": 9267,
+      "sha256": "c8c169641a5c55a82bdff23ad93090ffc0827a0fac71d8048c36fecf8d224701",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/manifest.json",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
     },
     {
       "path": "scripts/apply_B_hhi_backfill_2026-11-11.py",
@@ -318,51 +489,6 @@
       "sha256": "b7daa9fb7e3d42108ecdf15c120f1a6e229fe21fda798df93f37b6840fd05423",
       "rows": 145,
       "local_source": "数据/scripts/apply_B_hhi_backfill_2026-11-11.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
-    },
-    {
-      "path": "scripts/finalize_B_v1_archive_2026-11-11.py",
-      "bytes": 7095,
-      "sha256": "2d3da66ed630d6817b9e5f5bd66ab9cd23b398ed7afb5f54ac0df589523f79b7",
-      "rows": 145,
-      "local_source": "数据/scripts/finalize_B_v1_archive_2026-11-11.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
-    },
-    {
-      "path": "scripts/draw_B_figures_2026-11-12.py",
-      "bytes": 17792,
-      "sha256": "28d05ae95a09108ce690f54cf6514f689cb2d9d268f6a442a3224a55cb9bd0f1",
-      "rows": 356,
-      "local_source": "数据/scripts/draw_B_figures_2026-11-12.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
-    },
-    {
-      "path": "scripts/verify_B_figures_2026-11-12.py",
-      "bytes": 14284,
-      "sha256": "955d2faaf268be3603c7b57fdb304b66fe83c41f45eec609f85972b4890ccca1",
-      "rows": 294,
-      "local_source": "数据/scripts/verify_B_figures_2026-11-12.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
-    },
-    {
-      "path": "scripts/audit_B_figure_colour_2026-11-12.py",
-      "bytes": 7927,
-      "sha256": "8a37ca9b79ed38ce42aede079b97fdb195204b0b646babcdaca06022013e4c17",
-      "rows": 173,
-      "local_source": "数据/scripts/audit_B_figure_colour_2026-11-12.py",
-      "scan_layer": "script",
-      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
-    },
-    {
-      "path": "scripts/verify_B_figure_count_and_citations_2026-11-12.py",
-      "bytes": 7032,
-      "sha256": "060c15d436ba9d4cc827a96db247de8b6cb2a9f36b2238e74e831287e38845c7",
-      "rows": 148,
-      "local_source": "数据/scripts/verify_B_figure_count_and_citations_2026-11-12.py",
       "scan_layer": "script",
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
@@ -376,22 +502,96 @@
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
     {
-      "path": "scripts/verify_B_manuscript_v0_8_2026-11-12.py",
-      "bytes": 15071,
-      "sha256": "ec26702f8ca84d959d7c306ed820ba82b685d364cf99a44d7cbacf1c00b2fba1",
-      "rows": 285,
-      "local_source": "数据/scripts/verify_B_manuscript_v0_8_2026-11-12.py",
+      "path": "scripts/audit_B_figure_colour_2026-11-12.py",
+      "bytes": 7927,
+      "sha256": "8a37ca9b79ed38ce42aede079b97fdb195204b0b646babcdaca06022013e4c17",
+      "rows": 173,
+      "local_source": "数据/scripts/audit_B_figure_colour_2026-11-12.py",
       "scan_layer": "script",
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
     {
-      "path": "scripts/polish_B_manuscript_2026-11-12.py",
-      "bytes": 26746,
-      "sha256": "8dd50aeb2048ad4ab1a6c15973a47af73f8e3427f7fe40327f24aa6419f4a426",
-      "rows": 335,
-      "local_source": "数据/scripts/polish_B_manuscript_2026-11-12.py",
+      "path": "scripts/audit_B_pdf_pages_v1_2_2026-11-12.py",
+      "bytes": 9413,
+      "sha256": "d34a362136af537088ef2a0f6607c3384627660bb5bc6fdfaf44b43377fa2666",
+      "local_source": "数据/scripts/audit_B_pdf_pages_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/build_B_docx_2026-11-12.py",
+      "bytes": 11270,
+      "sha256": "53bb5455b7d03fbf3e62398d7b6752a88a753ea0e0bb759c5ac982624f55d90c",
+      "rows": 278,
+      "local_source": "数据/scripts/build_B_docx_2026-11-12.py",
       "scan_layer": "script",
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/build_B_docx_v1_2_2026-11-12.py",
+      "bytes": 4827,
+      "sha256": "7e33233b0c2763f9c26c532fff5c742bff78ba6bc0d305204ca91e205aafbae9",
+      "local_source": "数据/scripts/build_B_docx_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/build_B_pdf_proof_v1_2_2026-11-12.py",
+      "bytes": 5421,
+      "sha256": "2e96b860a96a57ea701539406487fac1931e2a2046852aaac011f6b60dc8585a",
+      "local_source": "数据/scripts/build_B_pdf_proof_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/build_B_supplement_v1_2_2026-11-12.py",
+      "bytes": 17983,
+      "sha256": "511c0d0e8d83579bf48539628174f8a9e9e9c73005c097b9973838445cba4236",
+      "local_source": "数据/scripts/build_B_supplement_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/compute_B_uncertainty_2026-11-11.py",
+      "bytes": 40602,
+      "sha256": "b4c1ff6731573abd314e26f847b95d798efcdde71649496c10960c053f21fe6d",
+      "rows": 805,
+      "local_source": "数据/scripts/compute_B_uncertainty_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/draw_B_figures_2026-11-12.py",
+      "bytes": 17792,
+      "sha256": "28d05ae95a09108ce690f54cf6514f689cb2d9d268f6a442a3224a55cb9bd0f1",
+      "rows": 356,
+      "local_source": "数据/scripts/draw_B_figures_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/draw_B_figures_v1_2_2026-11-12.py",
+      "bytes": 16299,
+      "sha256": "5a270ba712808aca867f381264cd887b4065040da255de43db4deaa78d3e8b5f",
+      "local_source": "数据/scripts/draw_B_figures_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/extend_B_aapc_robustness_2026-11-12.py",
+      "bytes": 4777,
+      "sha256": "2f5fad77f6cce3a4ae8edc1ad387d6b1e084b0b53ed065c3ebfa8bc759787145",
+      "local_source": "数据/scripts/extend_B_aapc_robustness_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/fetch_B_malaria_denominator_2026-11-12.py",
+      "bytes": 8569,
+      "sha256": "9ecc6d212777a932263458b556396fdb3a7d74c9de56b4dcc3979d645d996b0a",
+      "local_source": "数据/scripts/fetch_B_malaria_denominator_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
     },
     {
       "path": "scripts/finalize_B_v1_0_2026-11-12.py",
@@ -403,11 +603,88 @@
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
     {
-      "path": "scripts/build_B_docx_2026-11-12.py",
-      "bytes": 11270,
-      "sha256": "53bb5455b7d03fbf3e62398d7b6752a88a753ea0e0bb759c5ac982624f55d90c",
-      "rows": 278,
-      "local_source": "数据/scripts/build_B_docx_2026-11-12.py",
+      "path": "scripts/finalize_B_v1_archive_2026-11-11.py",
+      "bytes": 7095,
+      "sha256": "2d3da66ed630d6817b9e5f5bd66ab9cd23b398ed7afb5f54ac0df589523f79b7",
+      "rows": 145,
+      "local_source": "数据/scripts/finalize_B_v1_archive_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/make_B_figures_v1_2_2026-11-12.py",
+      "bytes": 3737,
+      "sha256": "f4b2c62a43cded72383b8ca9e94db7ed2d1355af24aee45a81c2366bae957010",
+      "local_source": "数据/scripts/make_B_figures_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/polish_B_manuscript_2026-11-12.py",
+      "bytes": 26746,
+      "sha256": "8dd50aeb2048ad4ab1a6c15973a47af73f8e3427f7fe40327f24aa6419f4a426",
+      "rows": 335,
+      "local_source": "数据/scripts/polish_B_manuscript_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/publish_B_deposit_v1_2_2026-11-12.py",
+      "bytes": 12218,
+      "sha256": "bf63f602941dcc0c2c0bec86ef56d7bf858c67eb8c0ee73397bb2aadd258c5fa",
+      "local_source": "数据/scripts/publish_B_deposit_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/recompute_B_burden_denominator_2026-11-12.py",
+      "bytes": 26604,
+      "sha256": "a0a0cf6352314824066f025ffb88b0a436a3e3eedcd87d2daa8cea63b88554c7",
+      "local_source": "数据/scripts/recompute_B_burden_denominator_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/revise_B_manuscript_v1_2_2026-11-12.py",
+      "bytes": 60965,
+      "sha256": "2c117e7ef0e9dd6aea32caa636b1ff08f8cd42981a7f3f6a96a06f82012d15b9",
+      "local_source": "数据/scripts/revise_B_manuscript_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
+    },
+    {
+      "path": "scripts/verify_B_disease_specific_supply_2026-11-11.py",
+      "bytes": 8746,
+      "sha256": "9d04668d1d73f1f0799aea957867b9ccabd22f45e3778d81cba570e49b790162",
+      "rows": 216,
+      "local_source": "数据/scripts/verify_B_disease_specific_supply_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_figure_count_and_citations_2026-11-12.py",
+      "bytes": 7032,
+      "sha256": "060c15d436ba9d4cc827a96db247de8b6cb2a9f36b2238e74e831287e38845c7",
+      "rows": 148,
+      "local_source": "数据/scripts/verify_B_figure_count_and_citations_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_figures_2026-11-12.py",
+      "bytes": 14284,
+      "sha256": "955d2faaf268be3603c7b57fdb304b66fe83c41f45eec609f85972b4890ccca1",
+      "rows": 294,
+      "local_source": "数据/scripts/verify_B_figures_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
+    },
+    {
+      "path": "scripts/verify_B_manuscript_v0_8_2026-11-12.py",
+      "bytes": 15071,
+      "sha256": "ec26702f8ca84d959d7c306ed820ba82b685d364cf99a44d7cbacf1c00b2fba1",
+      "rows": 285,
+      "local_source": "数据/scripts/verify_B_manuscript_v0_8_2026-11-12.py",
       "scan_layer": "script",
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
@@ -421,49 +698,21 @@
       "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     },
     {
-      "path": "README.md",
-      "bytes": 4203,
-      "sha256": "1a4c9423251204e4bf375450c55914a8e3d33c8b579af1b711de01037b1dc813",
-      "rows": 68,
-      "local_source": "generated",
-      "scan_layer": "root",
-      "note": ""
+      "path": "scripts/verify_B_manuscript_v1_2_2026-11-12.py",
+      "bytes": 24477,
+      "sha256": "1b5ae3a5415e45e25370efb95cba32460647bbb5717480fc32848b0f7feefc7e",
+      "local_source": "数据/scripts/verify_B_manuscript_v1_2_2026-11-12.py",
+      "scan_layer": "script",
+      "note": "v1.2 reproducible script"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1189,
-      "sha256": "ada0e5390e2b1d9e883ef8d3106a0ce5625b9358bc63c3eea32b60fca8278da9",
-      "rows": null,
-      "local_source": "generated",
-      "scan_layer": "root",
-      "note": ""
-    },
-    {
-      "path": ".gitignore",
-      "bytes": 151,
-      "sha256": "024af0d266e537c42d7642291f14ebda33e479f265c739c4d4fa10e8d4fd3e44",
-      "rows": null,
-      "local_source": "generated",
-      "scan_layer": "root",
-      "note": ""
-    },
-    {
-      "path": "REPRODUCE.md",
-      "bytes": 1715,
-      "sha256": "b37ce2fb85f7b1ffdfe16dc5488867cf01f658968c878442240c8206ab90dc25",
-      "rows": 30,
-      "local_source": "generated",
-      "scan_layer": "root",
-      "note": ""
-    },
-    {
-      "path": "DATA_AVAILABILITY_STATEMENT.md",
-      "bytes": 1201,
-      "sha256": "5e12cc7eaa8d0c7043755b483279c4b0b15dcb10a8dd394e294f2d77df4ecc0b",
-      "rows": 17,
-      "local_source": "generated from the repository's real html_url after creation",
-      "scan_layer": "root",
-      "note": "Written only after the repository existed; no placeholder URL"
+      "path": "scripts/verify_B_uncertainty_calibre_2026-11-11.py",
+      "bytes": 5220,
+      "sha256": "83cd7fa272474aa33836a3ea29583d123a3b678626b56056693a119b28f2a7f2",
+      "rows": 114,
+      "local_source": "数据/scripts/verify_B_uncertainty_calibre_2026-11-11.py",
+      "scan_layer": "script",
+      "note": "Repository copy; ROOT constant points to the author's local workspace and must be redirected to this deposit's data/ directory when re-running"
     }
   ],
   "script_adaptations": [
@@ -553,12 +802,38 @@
         "firewall-guard-constant (shipment-count literal)",
         "firewall-guard-constant x6"
       ]
+    },
+    {
+      "path": "v1.2 added files",
+      "items": [
+        "credential scan: 30 files, zero hits",
+        "firewall scan (data/figure layers): zero hits"
+      ]
     }
   ],
   "repository": {
     "owner": "kongdeyu0819-rgb",
     "name": "who-pq-supply-burden-alignment-deposit",
     "html_url": "https://github.com/kongdeyu0819-rgb/who-pq-supply-burden-alignment-deposit",
-    "tag": "v1.0.0"
+    "tag": "v1.2.0"
+  },
+  "version_history": [
+    {
+      "tag": "v1.0.0",
+      "role": "historical initial deposit",
+      "files": 51
+    },
+    {
+      "tag": "v1.2.0",
+      "role": "WHO official malaria case-count denominator; full recomputation",
+      "files": 81,
+      "added": 30
+    }
+  ],
+  "denominator_change": {
+    "primary": "MALARIA_EST_CASES (Estimated number of malaria cases, 2024 estimates)",
+    "comparison": "MALARIA_EST_INCIDENCE per 1 000 population at risk x total population",
+    "comparison_role": "sensitivity only",
+    "external_benchmark": "TB_e_inc_num; external magnitude check only (no India records)"
   }
 }

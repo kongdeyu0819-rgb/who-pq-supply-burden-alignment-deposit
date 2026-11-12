@@ -28,3 +28,12 @@ Random seed: 20261111. Bootstrap draws: 10,000 (country-share / concentration),
 5,000 (moving-block). Primary AAPC intervals are OLS t intervals; HAC(3) and
 residual moving-block intervals are sensitivity schemes tabulated in the
 manuscript's supplementary material.
+
+
+## v1.2 denominator recomputation (12 November 2026)
+
+6. `python scripts/fetch_B_malaria_denominator_2026-11-12.py` reads the WHO GHO indicator catalogue and writes the official case-count extract plus provenance.
+7. `python scripts/recompute_B_burden_denominator_2026-11-12.py` recomputes burden shares, M/D/C/R25, quartile shares, country-set reconciliation and the TB external benchmark; it asserts that the legacy denominator reproduces the published v1.0 values exactly and that TB/HIV values are unchanged.
+8. `python scripts/extend_B_aapc_robustness_2026-11-12.py` produces HAC lags 1-4, Durbin-Watson, residual ACF1-4 and the 2002-2025 refit.
+9. `python scripts/make_B_figures_v1_2_2026-11-12.py` regenerates `figures_v1_2/`; `python scripts/build_B_supplement_v1_2_2026-11-12.py` rebuilds supplementary tables S1-S8.
+10. `python scripts/audit_B_pdf_pages_v1_2_2026-11-12.py` and `python scripts/verify_B_manuscript_v1_2_2026-11-12.py` run the page-level and full-manuscript consistency checks.
