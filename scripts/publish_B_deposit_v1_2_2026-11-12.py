@@ -109,9 +109,10 @@ def main() -> None:
 
     # ---- 4) DAS 的 URL 必须与真实仓库一致（不静默改写）----
     das = (OUT / "DATA_AVAILABILITY_STATEMENT.md").read_text(encoding="utf-8")
-    assert html_url in das and f"/tree/{TAG}" in das, \
+    assert html_url in das and f"/tree/{TAG}" in das and "release v1.2.0:" in das, \
         "镜像 DAS 未指向真实仓库的 v1.2.0 固定版本"
-    assert "v1.0.0" not in das.replace("Release v1.0.0 is retained unchanged", ""), \
+    # v1.0.0 只允许作为历史版本被提及，不得再被写成当前固定版本
+    assert "release v1.0.0:" not in das.lower() and "historical version" in das.lower(), \
         "镜像 DAS 仍把 v1.0.0 写作当前固定版本"
 
     st, head, _ = req(token, "GET",

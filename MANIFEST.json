@@ -1,6 +1,6 @@
 {
   "schema": "B1-TMIH-deposit-manifest-v1",
-  "built_at_utc": "2026-11-12T14:41:51+00:00",
+  "built_at_utc": "2026-11-12T14:47:25+00:00",
   "listing_snapshot": "15 September 2026",
   "observation_window": "2002-2026 (25 years, inclusive)",
   "repository_purpose": "Public data and code deposit supporting the B1 TMIH manuscript",
@@ -630,8 +630,8 @@
     },
     {
       "path": "scripts/publish_B_deposit_v1_2_2026-11-12.py",
-      "bytes": 12218,
-      "sha256": "bf63f602941dcc0c2c0bec86ef56d7bf858c67eb8c0ee73397bb2aadd258c5fa",
+      "bytes": 12341,
+      "sha256": "6e53721a7683f2fb0bca92e1df317b2c65d100efc61692031301f95d6a7ab4f3",
       "local_source": "数据/scripts/publish_B_deposit_v1_2_2026-11-12.py",
       "scan_layer": "script",
       "note": "v1.2 reproducible script"
