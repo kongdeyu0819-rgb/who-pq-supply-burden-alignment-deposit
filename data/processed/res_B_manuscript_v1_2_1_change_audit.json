@@ -1,0 +1,59 @@
+{
+  "version": "v1.2.1",
+  "source": "39_B①主稿_v1.2_分母重算定稿_2026-11-12.md",
+  "output": "49_B①主稿_v1.2.1_唯一固定版本_2026-11-13.md",
+  "scope": "wording, definitions, traceability and fixed-version link only",
+  "word_count_imrd": {
+    "before": 3491,
+    "after": 3496,
+    "limit": 3500
+  },
+  "word_count_abstract": {
+    "before": 300,
+    "after": 300
+  },
+  "replacements": [
+    {
+      "item": "Methods 2.3 名称变体计数",
+      "note": "137 行 = 136 非空唯一名称 + 1 空白缺失行；不再声称约 15 家企业"
+    },
+    {
+      "item": "Results 3.3 中国持证商表述",
+      "note": "去掉与家数并列的措辞"
+    },
+    {
+      "item": "Discussion 名称变体计数",
+      "note": "与 Methods 2.3、Table S7 表注同口径"
+    },
+    {
+      "item": "Declarations 数据可得性",
+      "note": "固定版本改指 v1.2.1；两个旧版本登记为历史版本"
+    },
+    {
+      "item": "补材索引 Table S2",
+      "note": "口径改名 burden_observed_only"
+    },
+    {
+      "item": "补材索引 Notes S3",
+      "note": "登记标签字典与按病种写实的方法注"
+    },
+    {
+      "item": "补材索引 Table S6",
+      "note": "登记新增对账行、India 列与效标小表"
+    },
+    {
+      "item": "补材索引 Table S7",
+      "note": "与表注同口径"
+    },
+    {
+      "item": "Word count 回填",
+      "note": "同一口径实算 3491 -> 3496"
+    }
+  ],
+  "assertions": [
+    "no statistical value changed",
+    "no old denominator wording remains",
+    "fixed-version link points to v1.2.1",
+    "word count within journal limit"
+  ]
+}

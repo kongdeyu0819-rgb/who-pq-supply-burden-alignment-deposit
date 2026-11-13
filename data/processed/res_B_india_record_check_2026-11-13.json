@@ -1,0 +1,26 @@
+{
+  "check": "India records present in each GHO extract, read from deposited raw CSV",
+  "indicators": {
+    "TB_e_inc_num": {
+      "file": "data/raw/gho_tb_est_cases_2026-11-12.csv",
+      "n_rows": 5013,
+      "n_IND_rows": 0
+    },
+    "MALARIA_EST_CASES": {
+      "file": "data/raw/gho_mal_est_cases_2026-11-12.csv",
+      "n_rows": 2723,
+      "n_IND_rows": 25
+    },
+    "MALARIA_EST_INCIDENCE": {
+      "file": "data/raw/gho_mal_est_incidence_2026-11-12.csv",
+      "n_rows": 2680,
+      "n_IND_rows": 25
+    },
+    "MDG_0000000020 (existing sparse extract)": {
+      "file": "data/raw/gho_tb_inc.csv",
+      "n_rows": 957,
+      "n_IND_rows": 3
+    }
+  },
+  "conclusion": "TB_e_inc_num has no India records; India accounts for about one quarter of tuberculosis burden and is the largest holder country, so this indicator cannot replace the tuberculosis primary denominator."
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.2.1",
+  "date": "2026-11-13",
+  "scope": "labels, notes, definitions and traceability only; no statistical value changed",
+  "assertions": [
+    "primary table: all columns except method_note are cell-wise identical to v1.2.0",
+    "sensitivity table: all columns except calibre and note are cell-wise identical to v1.2.0",
+    "reconciliation table: original 9 rows identical except calibre and note",
+    "3 added burden_observed_only rows derived from the authoritative reconciliation primary rows and asserted against sensitivity n",
+    "India record counts read from deposited raw CSV, not asserted from memory",
+    "external benchmark summary recomputed from all 928 paired country-years"
+  ],
+  "primary_table_rows": 3,
+  "sensitivity_table_rows": 12,
+  "reconciliation_table_rows": 12,
+  "calibre_dictionary_rows": 21,
+  "benchmark_pairs": 928,
+  "india_TB_e_inc_num_rows": 0,
+  "bycountry_coverage_diagnostic": {
+    "finding": "The by-country derived table carries fewer rows with a positive primary burden share than the summary table's burden-observed country count. This is a pre-existing coverage convention in the v1.2.0 by-country table, not a value introduced or changed in v1.2.1. The new reconciliation rows therefore take their n from the authoritative summary and reconciliation tables.",
+    "status": "flagged for later verification; no statistical value changed in this round",
+    "by_disease": {
+      "Malaria": {
+        "bycountry_rows": 102,
+        "bycountry_rows_with_positive_b": 79,
+        "summary_burden_observed_countries": 81,
+        "difference": 2
+      },
+      "Tuberculosis": {
+        "bycountry_rows": 193,
+        "bycountry_rows_with_positive_b": 184,
+        "summary_burden_observed_countries": 193,
+        "difference": 9
+      },
+      "HIV/AIDS": {
+        "bycountry_rows": 151,
+        "bycountry_rows_with_positive_b": 142,
+        "summary_burden_observed_countries": 142,
+        "difference": 0
+      }
+    }
+  }
+}

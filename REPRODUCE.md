@@ -37,3 +37,11 @@ manuscript's supplementary material.
 8. `python scripts/extend_B_aapc_robustness_2026-11-12.py` produces HAC lags 1-4, Durbin-Watson, residual ACF1-4 and the 2002-2025 refit.
 9. `python scripts/make_B_figures_v1_2_2026-11-12.py` regenerates `figures_v1_2/`; `python scripts/build_B_supplement_v1_2_2026-11-12.py` rebuilds supplementary tables S1-S8.
 10. `python scripts/audit_B_pdf_pages_v1_2_2026-11-12.py` and `python scripts/verify_B_manuscript_v1_2_2026-11-12.py` run the page-level and full-manuscript consistency checks.
+
+
+## v1.2.1 single fixed version (13 November 2026)
+
+11. `python scripts/revise_B_derived_notes_v1_2_1_2026-11-13.py` rewrites calibre labels, method notes and reconciliation rows, writes the calibre dictionary, the India-record check and the grouped external benchmark, and asserts that every numeric cell outside the editable columns is unchanged.
+12. `python scripts/make_B_supplement_v1_2_1_2026-11-13.py` and `python scripts/revise_B_manuscript_v1_2_1_2026-11-13.py` rebuild the S1-S8 supplementary source and the manuscript; both are wording-only revisions.
+13. `python scripts/build_B_docx_v1_2_1_2026-11-13.py` and `python scripts/build_B_unique_version_v1_2_1_2026-11-13.py` assemble the two submission Word files, archive historical versions and write the submission MANIFEST with SHA-256 checksums.
+14. `python scripts/audit_B_pdf_pages_v1_2_1_2026-11-13.py` and `python scripts/verify_B_manuscript_v1_2_1_2026-11-13.py` run the 65 page-level checks and the 99 full-manuscript consistency checks. The page audit is performed on an internal proof PDF; the final submission PDF exported by the journal system still requires its own page-level audit.

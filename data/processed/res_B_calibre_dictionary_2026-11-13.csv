@@ -1,0 +1,22 @@
+﻿table,disease,v1_2_0_label,v1_2_1_label,denominator_meaning
+res_B_burden_sensitivity,Malaria,primary_official_case_counts,primary_official_case_counts,"WHO official estimated malaria cases (count), no population multiplier"
+res_B_burden_sensitivity,Malaria,total_population_multiplier_legacy,legacy_incidence_times_total_population,"estimated incidence per 1,000 population at risk x total population; sensitivity only"
+res_B_burden_sensitivity,Malaria,common_support_only,burden_observed_only,countries with a positive burden observation only; both sides renormalised on that set
+res_B_burden_sensitivity,Malaria,second_latest_burden_year,second_latest_burden_year,each country moved to its second-latest available burden year
+res_B_burden_sensitivity,Tuberculosis,primary_official_case_counts,primary_incidence_times_population,"TB incidence per 100,000 population x total population"
+res_B_burden_sensitivity,Tuberculosis,total_population_multiplier_legacy,calibre_record_denominator_unchanged,"denominator not replaced in v1.2; values identical to primary, calibre record only"
+res_B_burden_sensitivity,Tuberculosis,common_support_only,burden_observed_only,countries with a positive burden observation only; both sides renormalised on that set
+res_B_burden_sensitivity,Tuberculosis,second_latest_burden_year,second_latest_burden_year,each country moved to its second-latest available burden year
+res_B_burden_sensitivity,HIV/AIDS,primary_official_case_counts,primary_PLHIV_counts,"GHO people living with HIV counts (prevalence stock), not incident cases"
+res_B_burden_sensitivity,HIV/AIDS,total_population_multiplier_legacy,calibre_record_denominator_unchanged,"denominator not replaced in v1.2; values identical to primary, calibre record only"
+res_B_burden_sensitivity,HIV/AIDS,common_support_only,burden_observed_only,countries with a positive burden observation only; both sides renormalised on that set
+res_B_burden_sensitivity,HIV/AIDS,second_latest_burden_year,second_latest_burden_year,each country moved to its second-latest available burden year
+res_B_country_set_reconciliation,Malaria,primary_official_case_counts,primary_official_case_counts,union = 有负担观测国家 ∪ 全部 29 个持证商国家
+res_B_country_set_reconciliation,Malaria,legacy_total_population,legacy_incidence_times_total_population,旧总人口分母对照
+res_B_country_set_reconciliation,Malaria,second_latest_burden_year,second_latest_burden_year,次最新负担年
+res_B_country_set_reconciliation,Tuberculosis,primary_official_case_counts,primary_incidence_times_population,主口径：结核发病率 × 总人口；union = 有负担观测国家 ∪ 全部 29 个持证商国家
+res_B_country_set_reconciliation,Tuberculosis,legacy_total_population,calibre_record_denominator_unchanged,口径登记行，分母未替换
+res_B_country_set_reconciliation,Tuberculosis,second_latest_burden_year,second_latest_burden_year,次最新负担年
+res_B_country_set_reconciliation,HIV/AIDS,primary_official_case_counts,primary_PLHIV_counts,主口径：PLHIV 现患人数；union = 有负担观测国家 ∪ 全部 29 个持证商国家
+res_B_country_set_reconciliation,HIV/AIDS,legacy_total_population,calibre_record_denominator_unchanged,口径登记行，分母未替换
+res_B_country_set_reconciliation,HIV/AIDS,second_latest_burden_year,second_latest_burden_year,次最新负担年

@@ -1,10 +1,13 @@
 ﻿disease,calibre,burden_observed_countries,all_29_holder_countries,overlap_burden_and_holder,holder_without_burden,disease_specific_active_holder_countries,active_holder_without_burden,union_n,missing_burden_handling,b_positive_criterion,note
-Malaria,primary_official_case_counts,81,29,8,21,11,6,102,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,union = burden-observed countries ∪ all 29 holder countries
-Malaria,legacy_total_population,79,29,8,21,11,6,100,same as primary,b > 0,旧分母对照
+Malaria,primary_official_case_counts,81,29,8,21,11,6,102,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,union = 有负担观测国家 ∪ 全部 29 个持证商国家
+Malaria,burden_observed_only,81,8,8,0,5,0,81,excluded (no positive burden observation),b > 0 (equivalently w > 0); identical criterion in by-country table and summary,仅保留 b > 0 国家；无负担观测的持证商国被排除；union n = 有负担观测国家数
+Malaria,legacy_incidence_times_total_population,79,29,8,21,11,6,100,same as primary,b > 0,旧总人口分母对照
 Malaria,second_latest_burden_year,80,29,8,21,11,6,101,same as primary,b > 0,次最新负担年
-Tuberculosis,primary_official_case_counts,193,29,29,0,11,0,193,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,union = burden-observed countries ∪ all 29 holder countries
-Tuberculosis,legacy_total_population,193,29,29,0,11,0,193,same as primary,b > 0,旧分母对照
+Tuberculosis,primary_incidence_times_population,193,29,29,0,11,0,193,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,主口径：结核发病率 × 总人口；union = 有负担观测国家 ∪ 全部 29 个持证商国家
+Tuberculosis,burden_observed_only,193,29,29,0,11,0,193,excluded (no positive burden observation),b > 0 (equivalently w > 0); identical criterion in by-country table and summary,仅保留 b > 0 国家；无负担观测的持证商国被排除；union n = 有负担观测国家数
+Tuberculosis,calibre_record_denominator_unchanged,193,29,29,0,11,0,193,same as primary,b > 0,口径登记行，分母未替换
 Tuberculosis,second_latest_burden_year,193,29,29,0,11,0,193,same as primary,b > 0,次最新负担年
-HIV/AIDS,primary_official_case_counts,142,29,20,9,16,8,151,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,union = burden-observed countries ∪ all 29 holder countries
-HIV/AIDS,legacy_total_population,142,29,20,9,16,8,151,same as primary,b > 0,旧分母对照
+HIV/AIDS,primary_PLHIV_counts,142,29,20,9,16,8,151,b = 0 for holder countries without a burden observation; they remain in the universe,b > 0 (equivalently w > 0); identical criterion in by-country table and summary,主口径：PLHIV 现患人数；union = 有负担观测国家 ∪ 全部 29 个持证商国家
+HIV/AIDS,burden_observed_only,142,20,20,0,8,0,142,excluded (no positive burden observation),b > 0 (equivalently w > 0); identical criterion in by-country table and summary,仅保留 b > 0 国家；无负担观测的持证商国被排除；union n = 有负担观测国家数
+HIV/AIDS,calibre_record_denominator_unchanged,142,29,20,9,16,8,151,same as primary,b > 0,口径登记行，分母未替换
 HIV/AIDS,second_latest_burden_year,142,29,20,9,16,8,151,same as primary,b > 0,次最新负担年
