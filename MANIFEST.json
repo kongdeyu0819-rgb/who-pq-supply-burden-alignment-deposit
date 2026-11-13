@@ -1,6 +1,6 @@
 {
   "schema": "B1-TMIH-deposit-manifest-v1",
-  "built_at_utc": "2026-11-13T03:09:20+00:00",
+  "built_at_utc": "2026-11-13T03:11:35+00:00",
   "listing_snapshot": "15 September 2026",
   "observation_window": "2002-2026 (25 years, inclusive)",
   "repository_purpose": "Public data and code deposit supporting the B1 TMIH manuscript",
@@ -488,6 +488,15 @@
       "note": ""
     },
     {
+      "path": "figures/manifest.json",
+      "bytes": 9243,
+      "sha256": "848f9c291d568d0a730056aba2b4f17720b73b781334a269b96de3fd4e058503",
+      "rows": 426,
+      "local_source": "配图_2026-11-12/manifest.json",
+      "scan_layer": "data",
+      "note": ""
+    },
+    {
       "path": "figures_v1_2/Figure1.png",
       "bytes": 259385,
       "sha256": "853e9be24b6f214453b014f01310fc7e76193a74da0564c8f0291df0295a9550",
@@ -524,6 +533,14 @@
       "bytes": 852,
       "sha256": "9a2380af4be2cb8a601955537b8f48084c4beee0c2eee0d72f71941a1d0fdbb8",
       "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/figure_contract.json",
+      "scan_layer": "figure",
+      "note": "v1.2 main figure artefact"
+    },
+    {
+      "path": "figures_v1_2/manifest.json",
+      "bytes": 9267,
+      "sha256": "c8c169641a5c55a82bdff23ad93090ffc0827a0fac71d8048c36fecf8d224701",
+      "local_source": "WHO 预认证药品的供应—疾病负担空间可及性格局：质量信号、生产者集中度与公平性缺口（2002–2026）/配图_v1.2_2026-11-12/manifest.json",
       "scan_layer": "figure",
       "note": "v1.2 main figure artefact"
     },
@@ -600,8 +617,8 @@
     },
     {
       "path": "scripts/build_B_deposit_v1_2_1_2026-11-13.py",
-      "bytes": 18140,
-      "sha256": "83ac627e5f1e66bb596e60a1410f470dc386c75752bf75fd339afe99190218dc",
+      "bytes": 18378,
+      "sha256": "04e5a3f2da677dca03be826e46f1feaabece5bec5736635e0e932d05ccdbfca4",
       "local_source": "generated",
       "scan_layer": "script",
       "note": "v1.2.1 single-fixed-version reproducible script",
@@ -773,8 +790,8 @@
     },
     {
       "path": "scripts/publish_B_deposit_v1_2_1_2026-11-13.py",
-      "bytes": 14622,
-      "sha256": "c6ef6463ef932cd07eed9ac01105cacd083e932bdbfcfe6f51857208cbf0d8f7",
+      "bytes": 15104,
+      "sha256": "e6aa521e424abc9387715d327d3fbdac846f49517c4eed60f70b2346adec196e",
       "local_source": "generated",
       "scan_layer": "script",
       "note": "v1.2.1 single-fixed-version reproducible script",
@@ -1028,7 +1045,7 @@
     {
       "tag": "v1.2.1",
       "role": "single fixed version; label/definition corrections only",
-      "files": 101,
+      "files": 103,
       "touched": 27
     }
   ],

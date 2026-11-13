@@ -143,8 +143,11 @@ def main():
     if NEW.exists():
         assert NEW.name == "公开仓库_v1.2.1_2026-11-13", "拒绝删除非本脚本产出的目录"
         shutil.rmtree(NEW)
-    shutil.copytree(BASE, NEW, ignore=shutil.ignore_patterns(
-        "_build_summary.json", "_build_summary_v1.2.json", "MANIFEST.json"))
+    # 不可用 ignore_patterns("MANIFEST.json")：Windows 大小写不敏感会连带忽略
+    # figures/manifest.json 与 figures_v1_2/manifest.json 两份图件来源清单。
+    # 只忽略本地构建台账，根 MANIFEST 复制后单独删除。
+    shutil.copytree(BASE, NEW, ignore=shutil.ignore_patterns("_build_summary*.json"))
+    (NEW / "MANIFEST.json").unlink()
 
     touched = {}   # rel -> (layer, note)
     # ---- 1) 三张既有表：替换并断言数值零改动 ----

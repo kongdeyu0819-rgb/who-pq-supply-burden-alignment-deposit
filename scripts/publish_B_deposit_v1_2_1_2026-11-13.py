@@ -76,6 +76,19 @@ def anon(url: str) -> int:
         return -1
 
 
+def descends_from(token, owner, head, ancestor, depth=5):
+    """允许在同一 v1.2.1 版本内幂等重跑：head 可以是 v1.2.0 之后的连续提交。"""
+    cur = head
+    for _ in range(depth):
+        if cur == ancestor:
+            return True
+        st, c, _ = req(token, "GET", f"/repos/{owner}/{REPO_NAME}/git/commits/{cur}")
+        if st != 200 or not c.get("parents"):
+            return False
+        cur = c["parents"][0]["sha"]
+    return False
+
+
 def tag_commit(token, owner, tag):
     st, ref, _ = req(token, "GET", f"/repos/{owner}/{REPO_NAME}/git/ref/tags/{tag}")
     assert st == 200, f"历史 tag {tag} 不可读：{st} {ref}"
@@ -117,8 +130,8 @@ def main() -> None:
                       f"/repos/{owner}/{REPO_NAME}/git/ref/heads/{default_branch}")
     assert st == 200, f"读 default branch head 失败：{st}"
     base_commit = head["object"]["sha"]
-    assert base_commit == h12["commit_sha"], \
-        f"远端 head 与 v1.2.0 证据不一致，中止：{base_commit} != {h12['commit_sha']}"
+    assert descends_from(token, owner, base_commit, h12["commit_sha"]), \
+        f"远端 head 不在 v1.2.0 之后的提交链上，中止：{base_commit}"
 
     # 上传白名单 = 实际落盘文件（本地构建台账不入库）
     files = sorted(p for p in OUT.rglob("*")
